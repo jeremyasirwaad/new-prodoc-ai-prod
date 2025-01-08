@@ -6,6 +6,7 @@ import patient_journey_fact2 from "../../../assets/features/patient-journey/pati
 import patient_journey_fact3 from "../../../assets/features/patient-journey/patient_journey_fact_3.jpg";
 import patient_journey_fact4 from "../../../assets/features/patient-journey/patient_journey_fact_4.jpg";
 import patient_journey_hero from "../../../assets/features/patient-journey/patient_journey_hero.png";
+import Link from "next/link";
 // app/content/page.jsx
 export default function PatientJourney() {
   return (
@@ -154,9 +155,9 @@ export default function PatientJourney() {
               </span>
             </h3>
             <div className="flex items-center justify-center mt-8">
-              <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
+              <Link href={'/book-a-demo'} className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
                 Start your campaign
-              </div>
+              </Link>
             </div>
           </div>
         </div>

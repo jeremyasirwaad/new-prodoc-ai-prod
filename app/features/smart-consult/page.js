@@ -9,6 +9,7 @@ import smart_consult_step2 from "../../../assets/features/smart-consult/smart_co
 
 import { FaCircleCheck } from "react-icons/fa6";
 import smart_consult_section from "../../../assets/features/smart-consult/smart_consult_section.png"
+import Link from "next/link";
 // app/content/page.jsx
 export default function SmartConsultaion() {
   return (
@@ -138,9 +139,9 @@ export default function SmartConsultaion() {
               </span>
             </h3>
             <div className="flex items-center justify-center mt-8">
-              <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
+              <Link href={'/book-a-demo'} className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
                 Get Started
-              </div>
+              </Link>
             </div>
           </div>
         </div>

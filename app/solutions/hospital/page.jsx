@@ -43,10 +43,7 @@ export default function ForHospital() {
           <h3 className="text-lg mt-6 text-left">
             Hospitals face a unique challenge of fostering patient connections
             while managing complex workflows.
-            <span className="text-primary mt-6 mb-6">
-              {" "}
-              Prodoc bridges the gap!
-            </span>
+            
             <br />
             <p className="mt-4">
               We empower hospitals to nurture patient relationships through
@@ -232,7 +229,7 @@ export default function ForHospital() {
             </h3>
             <div className="flex items-center justify-center mt-8">
               <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
-                Enhance Your Hospital's Care Today
+              Book a Demo
               </div>
             </div>
           </div>

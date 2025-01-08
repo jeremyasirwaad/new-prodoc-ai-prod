@@ -9,6 +9,10 @@ import { IoMdClose } from "react-icons/io";
 import { Dropdown, Space } from "antd";
 
 export const Navbar = () => {
+  const [isOfferClose, setIsOfferClose] = useState(false);
+  const handleOfferClose = () => {
+    setIsOfferClose(true);
+  };
   return (
     <div>
       <div className="h-[88px] w-full flex items-center px-10">
@@ -158,19 +162,21 @@ export const Navbar = () => {
           <SimpleButton text={"Get in touch"} />
         </Link>
       </div>
-      <div className="w-full bg-[#1771d244] h-[70px] flex justify-center items-center">
-        <span className="text-sm">
-          <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
-            NEW YEAR OFFER
-          </button>
+      {!isOfferClose && (
+        <div className="w-full bg-[#1771d244] h-[70px] flex justify-center items-center ">
           <span className="text-sm">
-            Start your journey today with 20% off your first month!
+            <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
+              NEW YEAR OFFER
+            </button>
+            <span className="text-sm">
+              Start your journey today with 20% off your first month!
+            </span>
           </span>
-        </span>
-        <div className="absolute right-10">
-          <IoMdClose size={24} />
+          <div className="absolute right-10 cursor-pointer" onClick={handleOfferClose}>
+            <IoMdClose size={24} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

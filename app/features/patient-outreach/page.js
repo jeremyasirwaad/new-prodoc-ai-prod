@@ -6,6 +6,7 @@ import patient_outreach_fact2 from "../../../assets/features/patient-outreach/pa
 import patient_outreach_fact3 from "../../../assets/features/patient-outreach/patient_outreach_fact3.jpg";
 import patient_outreach_fact4 from "../../../assets/features/patient-outreach/patient_outreach_fact4.jpg";
 import patient_outreact_section_1 from "../../../assets/features/patient-outreach/patient_outreact_section_1.png"
+import Link from "next/link";
 // app/content/page.jsx
 export default function PatientOutreach() {
   return (
@@ -143,9 +144,9 @@ export default function PatientOutreach() {
               </span>
             </h3>
             <div className="flex items-center justify-center mt-8">
-              <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
+              <Link href={'/book-a-demo'} className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
                 Start your campaign
-              </div>
+              </Link >
             </div>
           </div>
         </div>

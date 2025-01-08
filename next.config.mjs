@@ -14,6 +14,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "crm.prodoc.ai",
       },
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+      },
+      {
+        protocol: "https",
+        hostname: "console.firebase.google.com",
+      },
     ],
   },
 };

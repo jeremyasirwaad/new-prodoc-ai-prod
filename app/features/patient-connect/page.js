@@ -10,6 +10,7 @@ import patient_step_2 from "../../../assets/features/patient-connect/patient_ste
 import patient_step_3 from "../../../assets/features/patient-connect/patient_step_3.png";
 import patient_step_4 from "../../../assets/features/patient-connect/patient_step_4.png";
 
+import Link from "next/link";
 import { useState } from "react";
 import { FaChevronCircleUp, FaChevronCircleDown } from "react-icons/fa";
 import patient_connect_hero from "../../../assets/features/patient-connect/patient_connect_hero.png";
@@ -19,25 +20,25 @@ export default function PatientConnect() {
   const steps = [
     {
       image: patient_step_1,
-      title: "Step 1: Get Started",
+      title: "Step 1: Business Setup",
       description:
         "Seamlessly integrate your business number with Prodoc's Patient Engagement Platform and receive official verification for enhanced credibility and trust.",
     },
     {
       image: patient_step_2,
-      title: "Step 2: AI-Powered Support",
+      title: "Step 2: AI powered Patient interactions",
       description:
         "Our advanced AI assistant, customized for your healthcare facility, provides instant 24/7 responses to patient inquiries about appointments, services, and more. Deliver reliable information when patients need it most.",
     },
     {
       image: patient_step_3,
-      title: "Step 3: Monitor & Analyze",
+      title: "Step 3: Analyse & Monitor",
       description:
         "Access comprehensive analytics through our intuitive dashboard. Track patient interactions, response times, and engagement metrics to continuously improve your patient communication strategy.",
     },
     {
       image: patient_step_4,
-      title: "Step 4: Convert & Qualify",
+      title: "Step 4: Interact & Convert",
       description:
         "Our intelligent system automatically identifies and qualifies promising conversations into leads, assigning priority scores to help you focus on the most valuable opportunities for your practice.",
     },
@@ -69,7 +70,6 @@ export default function PatientConnect() {
           </h1>
           <h3 className="text-lg mt-6 text-left">
             Transform your outpatient care with Prodoc AI's innovative platform{" "}
-            <br />
             designed to go beyond the limitations of traditional EHR portals.
           </h3>
           <button className="bg-primary w-fit h-fit mt-6 text-base text-white px-8 py-4 rounded-3xl">
@@ -222,9 +222,9 @@ export default function PatientConnect() {
               </span>
             </h3>
             <div className="flex items-center justify-center mt-8">
-              <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
+              <Link href={'/book-a-demo'} className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
                 Get Started
-              </div>
+              </Link>
             </div>
           </div>
         </div>
