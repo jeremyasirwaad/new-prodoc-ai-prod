@@ -15,11 +15,16 @@ export const Navbar = () => {
   };
   return (
     <div>
-      <div className="h-[88px] w-full flex items-center px-10">
-        <Link href={"/"} className="absolute left-10 cursor-pointer">
-          <Image src={logo_large} alt="Prodoc AI" width={200} height={100} />
+      <div className="h-[88px] w-full flex  items-center px-10 ">
+        <Link href={"/"} className="absolute left-5 sm:left-10 cursor-pointer">
+          <Image
+            src={logo_large}
+            alt="profile"
+            objectFit="cover"
+            className="w-auto h-7 sm:h-10 object-cover"
+          />
         </Link>
-        <div className="flex gap-6 lg:gap-10 mx-auto">
+        <div className="gap-6 lg:gap-10 mx-auto hidden sm:flex">
           <Dropdown
             dropdownRender={() => {
               return (
@@ -158,7 +163,7 @@ export const Navbar = () => {
             Book a Demo
           </Link>
         </div>
-        <Link href={"/book-a-demo"} className="absolute right-10">
+        <Link href={"/book-a-demo"} className="absolute right-10 hidden sm:block">
           <SimpleButton text={"Get in touch"} />
         </Link>
       </div>
