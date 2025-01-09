@@ -56,7 +56,7 @@ export default function LandingPage() {
           Schedule a meeting
         </Link>
       </div>
-     
+
       <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-20 mb-20">
         <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
       </div>
@@ -87,7 +87,7 @@ export default function LandingPage() {
               <p className="text-lg flex items-center gap-x-3">
                 <FaCircleCheck size={22} color="#1772d2" />
 
-                <span className="text-primary text-base">
+                <span className="text-primary text-lg">
                   Pre-Consultation Challenges
                 </span>
               </p>
@@ -100,44 +100,39 @@ export default function LandingPage() {
             <div>
               <p className="text-lg mt-6 flex items-center gap-x-3">
                 <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base">
+                <span className="text-primary text-lg">
                   Inconsistent Patient Communication
                 </span>
               </p>
               <p className="mt-1 text-sm">
-                Multiple channels and fragmented information create confusion.
-                Prodoc ensures consistent, multilingual, and 24/7 communication
-                across voice, WhatsApp, and bots.
+                Prodoc provides consistent, multilingual communication 24/7 via
+                voice, WhatsApp, and bots, reducing confusion from multiple
+                channels.
               </p>
             </div>
             <div>
               <p className="text-lg mt-6 flex items-center gap-x-3">
                 <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base">
-                  Care Journey Gaps
-                </span>
+                <span className="text-primary text-lg">Care Journey Gaps</span>
               </p>
               <p className="mt-1 text-sm">
-                Limited support outside hospital premises hinders patient
-                engagement. Prodoc provides continuous, personalized
-                interactions to improve care journeys and outcomes.
+                Limited support outside hospitals affects patient engagement.
+                Prodoc offers ongoing, personalized interactions to enhance care
+                journeys and outcomes.
               </p>
             </div>
             <div>
               <p className="text-lg mt-6 flex items-center gap-x-3">
                 <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base">
+                <span className="text-primary text-lg">
                   Referral and Collaboration Bottlenecks
                 </span>
               </p>
               <p className="mt-1 text-sm">
-                Managing patient referrals and coordinating with multiple
-                partners can be complex. Prodoc streamlines referrals and
-                enhances collaboration, driving efficiency and patient
-                satisfaction.
+                Coordinating patient referrals with partners is complex. Prodoc
+                simplifies this, boosting efficiency and satisfaction.
               </p>
             </div>
-            
           </div>
 
           <div className="flex justify-end items-end w-1/2">
@@ -199,8 +194,7 @@ export default function LandingPage() {
         </div>
       </div> */}
       <div className="w-full flex items-center justify-center bg-white">
-        <div className="w-[90vw] xl:w-[75vw] mt-20 mb-24 flex flex-col items-center justify-center ">
-          
+        <div className="w-[90vw] xl:w-[75vw]  flex flex-col items-center justify-center ">
           <div className="flex flex-row bg-blue-900 text-white p-12 w-[98.7vw] items-center gap-9 relative">
             <div className="flex flex-col items-center w-full justify-center">
               <h3 className="leading-tight text-[45px] text-center ">
@@ -208,21 +202,29 @@ export default function LandingPage() {
                 with{" "}
                 <span className="text-blue-400 text-[45px]"> Prodoc AI</span>
               </h3>
-              <Link href={"/book-a-demo"} className="mt-8">
-                <SimpleButton text={"Get in touch"} bgColor={"bg-blue-600"} />
-              </Link>
+              <div className="w-fit mt-10">
+                <Link
+                  href={"/book-a-demo"}
+                  className="bg-primary text-white px-6 py-4 rounded-3xl"
+                >
+                  Get in touch
+                </Link>
+              </div>
             </div>
 
             <Image
-            alt="alternative text"
+              alt="alternative text"
               className=" object-contain absolute bottom-0 right-0 opacity-50"
               src={landing_hero_3}
               width={350}
               height={250}
             />
           </div>
-
-          <div className="flex gap-10 mt-14">
+        </div>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <div className="w-[90vw] xl:w-[75vw]   mb-24 flex flex-col items-center justify-center ">
+          <div className="flex gap-10 mt-28">
             <div
               className="w-1/3 cursor-pointer"
               onClick={() =>
@@ -264,7 +266,6 @@ export default function LandingPage() {
                 </Link>
               </p>
             </div>
-
             <div
               className="w-1/3 cursor-pointer"
               onClick={() =>
@@ -288,9 +289,11 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
       <div className="w-full flex items-center justify-center">
         <div className="w-[90vw] xl:w-[75vw]  mb-24 flex flex-col items-center justify-center ">
-          <div className="flex gap-10 mt-14 w-full justify-center items-center">
+          <Divider />
+          <div className="flex gap-10 mt-4 w-full justify-center items-center">
             <div className="w-1/3">
               <p className="mt-6 text-[65px] text-center">1M+</p>
               <p className="text-xl text-center">Patients Engaged</p>
@@ -343,7 +346,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-white  flex items-center justify-center">
+      <div className="w-full  flex items-center justify-center">
         <div className="w-[90vw]  xl:w-[75vw] rounded-2xl mt-20 mb-20">
           <h5 className="text-[50px]">
             Value delivered to <br></br> our customers
@@ -376,17 +379,14 @@ export default function LandingPage() {
               Effortless API{" "}
               <span className="text-primary text-[50px]"> Integrations </span>{" "}
               <br></br>
-             
             </h5>
-           
+
             <h3 className="text-lg mt-6 text-left">
-              
               Seamlessly integrate with EHRs, patient portals, and custom
               healthcare applications. Enhance efficiency by reducing context
               switching and deliver personalised, patient-centric care and
               support.
             </h3>
-            
           </div>
           <div className="w-[50%] bg-red p-5 MyGradient">
             <Marquee speed={40} direction="left">
@@ -421,7 +421,6 @@ export default function LandingPage() {
         </div>
       </div>
 
-     
       <div className="w-full flex items-center justify-center">
         <div className="mt-10 mb-5 w-[90vw] xl:w-[75vw] rounded-2xl">
           <h5 className="text-[50px]">
@@ -458,7 +457,6 @@ export default function LandingPage() {
                 generation, and better patient retention
               </p>
             </div>
-            
           </div>
           <div className="w-full flex gap-8 mt-10">
             <div className="w-1/2 flex flex-col bg-white p-10 rounded-xl relative">
@@ -488,7 +486,6 @@ export default function LandingPage() {
                 automatically, and engage with them in their own language.
               </p>
             </div>
-           
           </div>
         </div>
       </div>
@@ -618,10 +615,8 @@ export default function LandingPage() {
                     </div>
                   </div>
                 </Form>
-                <Divider className="mt-20" />
               </div>
             </div>
-         
           </div>
         </div>
       </div>
