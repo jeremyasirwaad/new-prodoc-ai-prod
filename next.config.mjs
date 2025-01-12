@@ -22,6 +22,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "console.firebase.google.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+      },
     ],
   },
 };

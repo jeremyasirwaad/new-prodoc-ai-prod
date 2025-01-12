@@ -3,7 +3,7 @@
 export default function termsAndConditions() {
   return (
     <section>
-      <div className="flex flex-col justify-center items-center mt-16">
+      <div className="flex flex-col justify-center items-center pt-16">
         <div className="mx-auto w-full max-w-7xl text-left flex justify-start items-center">
           <div className="w-fit flex justify-center items-center gap-x-2 cursor-pointer text-sm p-2 rounded-md hover:bg-[#f7f7f5]">
             <svg
