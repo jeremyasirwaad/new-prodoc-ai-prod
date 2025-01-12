@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from "react";
@@ -35,9 +34,13 @@ export const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
+<<<<<<< HEAD
       <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10 justify-between">
+=======
+      <div className="h-[88px] z-50  fixed w-full flex items-center px-4 sm:px-10 justify-between">
+>>>>>>> 86fc244d303bef28b6414d0d594895f06fb8283c
         {/* Logo */}
-        <Link href="/" className="cursor-pointer"  onClick={closeDropdownMob}>
+        <Link href="/" className="cursor-pointer" onClick={closeDropdownMob}>
           <Image
             src={logo_large}
             alt="logo"
@@ -135,11 +138,36 @@ export const Navbar = () => {
                 Solutions
               </span>
             </Dropdown>
+            <Dropdown
+              dropdownRender={() => {
+                return (
+                  <div className="bg-white flex flex-col rounded-3xl p-6 w-[300px] shadow-lg mt-4">
+                    <h3 className="font-semibold text-lg mb-2 text-primary">
+                      LLMs
+                    </h3>
+                    <Link
+                      href={"/llms/open-source"}
+                      className="cursor-pointer p-3 rounded-lg hover:bg-blue-50"
+                    >
+                      <span> Open Sourced LLMs</span>
+                    </Link>
+                    <span className="cursor-not-allowed text-gray-400 p-3 rounded-lg hover:bg-blue-50">
+                      Experience Center
+                    </span>
+                  </div>
+                );
+              }}
+              placement="bottom"
+            >
+              <span className="relative cursor-pointer after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-[64px] after:-translate-x-1/2">
+                LLMs
+              </span>
+            </Dropdown>
 
             {/* Resources Dropdown */}
             <Dropdown
               dropdownRender={() => (
-                <div className="bg-white flex flex-col rounded-3xl p-6 w-[350px] shadow-lg mt-4">
+                <div className=" bg-white  flex flex-col rounded-3xl p-6 w-[350px] shadow-lg mt-4">
                   <h3 className="font-semibold text-lg mb-2 text-primary">
                     Resources
                   </h3>
@@ -297,7 +325,37 @@ export const Navbar = () => {
               </div>
             )}
           </div>
-
+          <div className="w-[85vw] cursor-pointer">
+            <div
+              className="flex items-center justify-between"
+              onClick={() => toggleDropdownMobile("llms")}
+            >
+              <h3 className="text-lg font-semibold">LLMs</h3>
+              {activeDropdown === "llms" ? (
+                <IoIosArrowUp />
+              ) : (
+                <IoIosArrowDown />
+              )}
+            </div>
+            {activeDropdown === "llms" && (
+              <div className="p-4 flex flex-col gap-4">
+                <Link
+                  href="/llms/open-source"
+                  onClick={closeDropdownMob}
+                  className="cursor-pointer"
+                >
+                  Open Sourced LLms
+                </Link>
+                <Link
+                  href="/"
+                  onClick={closeDropdownMob}
+                  className="cursor-pointer disabled: "
+                >
+                  Experience Center
+                </Link>
+              </div>
+            )}
+          </div>
           {/* Resources */}
           <div className="w-[85vw] cursor-pointer">
             <div
