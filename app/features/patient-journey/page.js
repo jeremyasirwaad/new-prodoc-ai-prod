@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function PatientJourney() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:h-[204px]">
+      <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:h-[204px] p-2">
         <h1 className="font-[400] sm:tracking-[1px]">
           Transform & Innovate{" "}
           <span className="text-primary text-[30px] sm:text-[50px] font-[400] sm:tracking-[1px]">
@@ -111,7 +111,7 @@ export default function PatientJourney() {
         </div>
       </div> */}
       <div className="w-full flex items-center justify-center bg-white">
-        <div className=" mb-10 sm:mt-20 sm:mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
+        <div className=" mb-10 mt-10 sm:mt-20 sm:mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
           <h5 className="text-[30px] sm:text-[36px] lg:text-[40px] text-center">
             Discover how Prodoc AI <br className="hidden sm:block" /> enhances
             <span className="text-primary text-[30px] sm:text-[36px] lg:text-[40px]">
@@ -223,24 +223,24 @@ export default function PatientJourney() {
             <h3 className="text-[30px] sm:text-[40px] mb-6 sm:mb-10 text-center sm:text-left">
               Personalized Guidance
             </h3>
-            <p className="text-lg flex items-center gap-x-3">
-              <FaCircleCheck size={26} color="#1772d2" />
+            <p className="text-base sm:text-lg flex items-center gap-x-3">
+              <FaCircleCheck className="text-xl"  color="#1772d2" />
               AI delivers customized instructions and resources.
             </p>
-            <p className="text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck size={26} color="#1772d2" />
+            <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
+              <FaCircleCheck className="text-xl"  color="#1772d2" />
               Real-time updates on care plans.
             </p>
-            <p className="text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck size={26} color="#1772d2" />
+            <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
+              <FaCircleCheck className="text-xl"  color="#1772d2" />
               Suggest services for accelerated recovery.
             </p>
-            <p className="text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck size={26} color="#1772d2" />
+            <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
+              <FaCircleCheck className="text-xl"  color="#1772d2" />
               Direct communication with healthcare providers.
             </p>
           </div>
-          <div className="flex justify-center sm:justify-end items-center w-full sm:w-1/2">
+          <div className="justify-center hidden sm:flex sm:justify-end items-center w-full sm:w-1/2">
             <Image
               alt="patient_outreact_section_1"
               src={patient_journey_section}

@@ -33,9 +33,8 @@ export default function LandingPage() {
   const [form] = Form.useForm();
 
   return (
-
     <section className="flex flex-col items-center justify-center px-4 sm:px-0">
-      <div className="mt-20  text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] sm:mt-32  sm:h-[200px]">
+      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] mt-32   sm:h-[200px]">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[50px] ">
           Enhance{" "}
           <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
@@ -68,7 +67,7 @@ export default function LandingPage() {
           {slider_logo.map((logo) => {
             return (
               <Image
-                className="mr-28 object-contain grayscale"
+                className="mr-10 sm:mr-28 object-contain grayscale"
                 src={logo.src}
                 alt={logo.name}
                 key={logo.name}
@@ -257,19 +256,22 @@ export default function LandingPage() {
           height={250}
         />
       </div> */}
-      <div className="w-[100vw] flex bg-blue-900 text-white p-6 sm:p-12  flex-col relative items-center gap-10">
-        <div className="flex flex-col items-center w-full justify-center gap-12 sm:gap-16">
-          <h3 className="leading-tight text-[28px] sm:text-[45px] text-center">
-            Transform Patient Communication <br />
-            with{" "}
-            <span className="text-blue-400 text-[28px] sm:text-[45px]">
-              Prodoc AI
-            </span>
-          </h3>
-          <div className="w-fit">
+      <div className="w-[100vw] flex bg-blue-900 text-white p-6 sm:p-12 flex-col relative items-center ">
+        <div className="flex flex-col items-center w-full justify-center gap-6 sm:gap-10">
+          <div className="">
+            <h3 className="leading-tight text-[28px] sm:text-[45px] text-center">
+              Transform Patient Communication <br />
+              with{" "}
+              <span className="text-blue-400 text-[28px] sm:text-[45px]">
+                Prodoc AI
+              </span>
+            </h3>
+          </div>
+
+          <div className="w-fit flex items-center justify-center">
             <Link
               href={"/book-a-demo"}
-              className="bg-primary text-white px-4 py-3 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
+              className="bg-primary text-white px-5 py-4 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
             >
               Get in touch
             </Link>
@@ -278,7 +280,7 @@ export default function LandingPage() {
 
         <Image
           alt="alternative text"
-          className="object-contain mt-8 sm:mt-0 sm:absolute sm:bottom-0 sm:right-0 opacity-50"
+          className="object-contain mt-8 hidden sm:block sm:mt-0 sm:absolute sm:bottom-0 sm:right-0 opacity-50"
           src={landing_hero_3}
           width={250}
           height={200}
@@ -397,7 +399,9 @@ export default function LandingPage() {
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-4 sm:mt-6">100+</p>
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-4 sm:mt-6">
+            100+
+          </p>
           <p className="text-lg sm:text-xl">Healthcare Providers</p>
         </div>
         {/* </div> */}
@@ -644,7 +648,7 @@ export default function LandingPage() {
             <Marquee speed={40} direction="left">
               {firstMarqueePluginLogos.map((logo) => (
                 <Image
-                  className="mr-6 sm:mr-12 object-contain rounded-2xl"
+                  className="mr-6 sm:mr-12 object-contain rounded-2xl bg-white"
                   src={logo.src}
                   alt={logo.name}
                   key={logo.name}
@@ -656,7 +660,7 @@ export default function LandingPage() {
             <Marquee speed={40} direction="right" className="mt-6 sm:mt-10">
               {secondMarqueePluginLogos.map((logo) => (
                 <Image
-                  className="mr-8 sm:mr-14 object-contain rounded-2xl"
+                  className="mr-8 sm:mr-14 object-contain rounded-2xl bg-white"
                   src={logo.src}
                   alt={logo.name}
                   key={logo.name}
@@ -828,10 +832,10 @@ export default function LandingPage() {
       <div className="w-[100vw] bg-white relative flex items-center justify-center">
         <div className="mt-20 mb-20">
           <div className="">
-            <h3 className="text-4xl text-black text-center">
+            <h3 className="text-[28px] sm:text-4xl text-black text-center">
               Empowering 100+ healthcare facilities worldwide
               <br />
-              <span className="text-2xl font-normal mt-6 block">
+              <span className="text-2xl font-normal mt-6 hidden sm:block">
                 With{" "}
                 <span className="text-primary text-2xl">
                   24/7 multilingual <br className="sm:hidden"></br>{" "}
@@ -842,7 +846,10 @@ export default function LandingPage() {
             <div className="w-full flex items-center justify-center flex-col">
               <div className="mt-20 w-[90vw] xl:w-[75vw] rounded-2xl flex items-center justify-center flex-col">
                 <span className="text-center text-[30px]  sm:text-[45px]">
-                  Book a <span className="text-black  text-center text-[30px]  sm:text-[45px]">Demo</span>
+                  Book a{" "}
+                  <span className="text-black  text-center text-[30px]  sm:text-[45px]">
+                    Demo
+                  </span>
                 </span>
                 <p className="text-center text-sm sm:text-lg ">
                   Please complete the form and learn how our solutions can

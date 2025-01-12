@@ -31,15 +31,14 @@ export default function PatientOutreach() {
           Let's get started
         </div>
       </div>
-      <div className="w-[90vw] xl:w-[65vw] rounded-2xl mt-20 mb-20">
+      <div className="w-[90vw] xl:w-[65vw]  mt-20 mb-20">
         <Image
           alt="patient_outreach_hero"
-          className="rounded-3xl"
           src={patient_outreach_hero}
         />
       </div>
       <div className="w-full flex items-center justify-center bg-white">
-        <div className=" sm:mt-20 mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
+        <div className="mt-10 sm:mt-20 mb-10 w-[90vw] xl:w-[75vw] rounded-2xl">
           <h5 className=" text-center text-[30px] sm:text-[40px]">
             Empowers you to <br className="sm:hidden"></br> deliver{" "}
             <br className="hidden sm:block"></br> exceptional
@@ -142,34 +141,34 @@ export default function PatientOutreach() {
       {/**start */}
       <div className="w-[90vw] gap-2 sm:gap-2 flex flex-col sm:flex-row items-start justify-start sm:w-[75vw]  mt-8 mb-8">
         <div>
-          <h3 className="text-center text-[30px] sm:text-[40px] mb-10 m-auto">
+          <h3 className="text-center sm:text-left text-[30px] sm:text-[40px] mb-10 m-auto">
             Smart Patient <br className="sm:hidden"></br>{" "}
             <span className="text-primary text-[30px] sm:text-[40px]">
               Outreach
             </span>
           </h3>
 
-          <p className=" text-base mb-2 flex items-center gap-8 sm:gap-8 sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />{" "}
+          <p className=" text-base mb-6 flex items-center gap-8 sm:gap-8 sm:text-lg">
+            <FaCircleCheck className="text-lg" color="#1772d2" />{" "}
             <span>
               Enterprise WhatsApp Marketing Suite with Advanced Analytics
             </span>
           </p>
 
-          <p className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <p className="text-base mb-6 flex items-center gap-8 sm:gap-8  sm:text-lg">
+            <FaCircleCheck className="text-lg" color="#1772d2" />
             <span>
               AI-Powered Voice Campaigns with Natural Language Understanding
             </span>
           </p>
-          <p className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <p className="text-base mb-6 flex items-center gap-8 sm:gap-8  sm:text-lg">
+            <FaCircleCheck className="text-lg" color="#1772d2" />
             <span>
               Precision Meta Ads Integration with Demographic Targeting
             </span>
           </p>
-          <p className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <p className="text-base mb-6 flex items-center gap-8 sm:gap-8  sm:text-lg">
+            <FaCircleCheck className="text-lg" color="#1772d2" />
             <span> Comprehensive Web Campaign Builder with A/B Testing</span>
           </p>
         </div>

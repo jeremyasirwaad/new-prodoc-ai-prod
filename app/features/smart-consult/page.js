@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function SmartConsultaion() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[48px] sm:leading-[68px] mt-20 sm:mt-32 mb-10 sm:mb-20 sm:w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center gap-y-10 sm:gap-x-10">
+      <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[48px] sm:leading-[68px] mt-32 sm:mt-32 mb-10 sm:mb-20 sm:w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center gap-y-10 sm:gap-x-10">
         {/* Left Section */}
         <div className="text-[30px] sm:text-[50px] lg:text-[50px] flex flex-col w-[90vw] sm:w-[50%]">
           <h1 className="font-[400] sm:text-left">
@@ -24,7 +24,7 @@ export default function SmartConsultaion() {
             </span>
             <br />
           </h1>
-          <h3 className="text-sm sm:text-lg mt-4 sm:mt-6 text-left">
+          <h3 className="text-lg sm:text-lg mt-4 sm:mt-6 text-center sm:text-left">
             Prodoc AI's Q&A feature transforms patient interactions with
             real-time chat capabilities on WhatsApp and website bots.
             <br />
@@ -33,7 +33,7 @@ export default function SmartConsultaion() {
             patients and doctors while ensuring secure and seamless
             communication.
           </h3>
-          <button className="bg-primary w-fit h-fit mt-6 text-sm sm:text-base text-white px-6 sm:px-8 py-3 sm:py-4 rounded-3xl self-center sm:self-start">
+          <button className="bg-primary w-fit h-fit mt-6 text-sm sm:text-base text-white px-6  sm:px-8 py-5 sm:py-4 rounded-3xl self-center sm:self-start">
             Schedule a Demo
           </button>
         </div>
@@ -52,7 +52,7 @@ export default function SmartConsultaion() {
                 <Image
                   src={smart_consult_step1}
                   alt="alt"
-                  className="w-[80%] sm:w-auto"
+                  className="w-[100%] sm:w-auto"
                 />
               </div>
               <div className="text-[30px] sm:text-[50px] flex flex-col w-full sm:w-[50%] sm:ml-14">
@@ -82,7 +82,7 @@ export default function SmartConsultaion() {
                 <Image
                   src={smart_consult_step2}
                   alt="alt"
-                  className="w-[80%] sm:w-auto"
+                  className="w-[100%] sm:w-auto"
                 />
               </div>
               <div className="text-[30px] sm:text-[50px] flex flex-col w-full sm:w-[50%] sm:ml-10">
@@ -101,40 +101,39 @@ export default function SmartConsultaion() {
         </div>
       </div>
       {/* Scroller End */} {/* Left Section */}
-      <div className="w-[90vw] gap-2 sm:gap-3 flex flex-col sm:flex-row items-start justify-start sm:w-[75vw]  mt-8 sm:mb-8">
+      <div className="w-[90vw] gap-2 sm:gap-3 flex flex-col sm:flex-row items-start justify-start sm:w-[75vw]  mt-10 mb-10 sm:mb-8">
         <div>
           <h3 className="text-2xl sm:text-5xl mb-6 sm:mb-10 text-left">
             Why Choose Prodoc AI Q&A?
           </h3>
-
-          <h3 className=" text-base mb-2 flex items-center gap-8 sm:gap-8 sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />{" "}
+          <h3 className=" text-base mb-6 flex items-start gap-8 sm:gap-8 sm:text-lg">
+            <FaCircleCheck className="text-xl" color="#1772d2" />{" "}
             <span>
               Always on, ensuring patients get the help they need anytime
             </span>
           </h3>
 
-          <h3 className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <h3 className="text-base mb-6 items-start  flex  gap-8 sm:gap-8  sm:text-lg">
+            <FaCircleCheck className="text-xl" color="#1772d2" />
             <span>
               Disease-specific, AI-driven questions for better context
             </span>
           </h3>
-          <h3 className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <h3 className="text-base mb-6 flex items-start gap-8 sm:gap-8  sm:text-lg">
+            <FaCircleCheck className="text-xl" color="#1772d2" />
             <span>
               Secure communication without disclosing personal numbers
             </span>
           </h3>
-          <h3 className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <h3 className="text-base mb-6 flex items-start gap-8 sm:gap-8 sm:text-lg">
+            <FaCircleCheck className="text-xl" color="#1772d2" />
             <span>
               Reduces doctor workload with ready-to-use case summaries
             </span>
           </h3>
 
-          <h3 className="text-base mb-2 flex items-center gap-8 sm:gap-8  sm:text-lg ">
-            <FaCircleCheck size={22} color="#1772d2" />
+          <h3 className="text-base mb-6 flex items-start gap-8 sm:gap-8 sm:text-lg">
+            <FaCircleCheck className="text-xl" color="#1772d2" />
             <span>Quick, clear, and professional responses</span>
           </h3>
         </div>

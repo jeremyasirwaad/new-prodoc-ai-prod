@@ -163,20 +163,20 @@ export default function Insurance() {
               Why Patients Love Us
             </h3>
             <p className="text-base sm:text-lg flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={22} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Accessible on every device, ensuring seamless connectivity
               everywhere
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={22} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Personalized health advice tailored specifically for your needs
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={22} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Easy-to-use interactive platform designed for user-friendliness
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={22} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Quicker claims processing for all, enhancing efficiency and
               satisfaction
             </p>

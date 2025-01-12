@@ -23,7 +23,7 @@ export default function LLMOpenSource() {
           openly available through Prodoc AI's commitment to open source
         </h3>
       </div> */}
-      <div className="text-[30px] sm:text-[40px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] md:leading-[68px] pt-24 sm:mt-24 md:mt-32 h-auto ">
+      <div className="text-[30px] sm:text-[40px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] mt-10 md:leading-[68px] pt-24 sm:mt-24 md:mt-32 h-auto ">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]">
           Explore Our <br className="sm:hidden"></br>
           <span className="text-primary text-[30px] sm:text-[40px] md:text-[55px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
@@ -216,7 +216,7 @@ export default function LLMOpenSource() {
 
         <div className="mt-8 space-y-6">
           {/* Model Objective Section */}
-          <div className="p-4 sm:p-6 rounded-lg bg-white shadow-sm">
+          <div className="p-4 sm:p-6 rounded-lg shadow-sm">
             <h4 className="text-lg sm:text-xl font-semibold mb-4">
               Model Objective
             </h4>
@@ -253,7 +253,7 @@ export default function LLMOpenSource() {
           </div>
 
           {/* Dataset Information Section */}
-          <div className="p-4 sm:p-6 rounded-lg bg-white shadow-sm">
+          <div className="p-4 sm:p-6 rounded-lg shadow-sm">
             <h4 className="text-lg sm:text-xl font-semibold mb-4">
               Dataset Information
             </h4>
@@ -291,7 +291,7 @@ export default function LLMOpenSource() {
           </div>
 
           {/* Ollama Integration Section */}
-          <div className="p-4 sm:p-6 rounded-lg bg-white shadow-sm">
+          <div className="p-4 sm:p-6 rounded-lgshadow-sm">
             <h4 className="text-lg sm:text-xl font-semibold mb-4">
               Ollama Integration
             </h4>

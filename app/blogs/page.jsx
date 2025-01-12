@@ -38,7 +38,7 @@ export default async function BlogsPage({ searchParams }) {
         <link rel="canonical" href={`https://prodoc.ai/blogs`} />
       </Head>
       
-      <div className="max-w-6xl mx-auto px-8 mt-20">
+      <div className="max-w-6xl mx-auto px-8 pt-20">
         <BlogList initialBlogs={data} initialPage={page} pageSize={pageSize} totalPages={meta.pagination.pageCount} />
       </div>
     </div>

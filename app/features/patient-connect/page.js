@@ -58,7 +58,7 @@ export default function PatientConnect() {
 
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center sm:gap-x-10">
+      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-x-10">
         <div className="text-[40] flex flex-col sm:w-[50%]">
           <h1 className="font-[400] text-center text-[30px] sm:text-[50px]  sm:text-left ">
             Enhance{" "}
@@ -68,11 +68,11 @@ export default function PatientConnect() {
             <br />
             with Smart Solutions
           </h1>
-          <h3 className="text-lg mt-6 text-left">
+          <h3 className="text-lg mt-6 text-center sm:text-left">
             Transform your outpatient care with Prodoc AI's innovative platform{" "}
             designed to go beyond the limitations of traditional EHR portals.
           </h3>
-          <button className="bg-primary mx-auto sm:mx-0 w-fit h-fit mt-6 text-base text-white px-4 py-3 sm:px-8 sm:py-4 rounded-3xl">
+          <button className="bg-primary mx-auto sm:mx-0 w-fit h-fit mt-6 text-base text-white px-8 py-4  sm:px-8 sm:py-4 rounded-3xl">
             Start Now
           </button>
         </div>

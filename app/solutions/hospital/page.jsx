@@ -240,23 +240,23 @@ export default function ForHospital() {
         <div className="w-[90vw] xl:w-[75vw] mt-20 mb-10 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
           {/* Text Section */}
           <div className="flex items-start flex-col justify-start w-full lg:w-1/2">
-            <h3 className="text-[30px] sm:text-[50px] mx-auto mb-6 sm:mb-10 text-center sm:text-left">
+            <h3 className="text-[30px] sm:text-[50px] mx-auto sm:mx-0 mb-6 sm:mb-10 text-center sm:text-left">
               Transformative Benefits <br /> for Hospitals
             </h3>
             <p className="text-base sm:text-lg flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={26} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Drastically Lower Readmission Rates
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={26} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Boosted Financial Performance
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={26} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Seamless Collaboration Across Teams
             </p>
             <p className="text-base sm:text-lg mt-4 lg:mt-6 flex items-center gap-x-3 text-center lg:text-left">
-              <FaCircleCheck size={26} color="#1772d2" />
+              <FaCircleCheck className="text-lg" color="#1772d2" />
               Superior Patient Care & Outcomes
             </p>
           </div>
@@ -273,13 +273,13 @@ export default function ForHospital() {
       </div>
 
       <div className="w-fullrelative flex items-center justify-center">
-        <div className="mt-10 sm:mt-20 sm:mb-20">
+        <div className="mt-10 mb-10 sm:mt-20 sm:mb-20">
           <div className="">
             <h3 className="text-2xl sm:text-4xl text-black text-center leading-10">
               Empowering Hospitals to <br className="sm:hidden"></br> Achieve
               Outstanding Care
               <br />
-              <span className="text-2xl sm:text-4xl font-normal sm:mt-2 block">
+              <span className="text-2xl  sm:text-4xl font-normal sm:mt-2 hidden sm:block">
                 With{" "}
                 <span className="text-primary text-2xl sm:text-4xl">
                   intelligent automation

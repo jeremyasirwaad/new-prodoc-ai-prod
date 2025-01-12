@@ -46,7 +46,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        {window.innerWidth > 600 && (
+        {typeof window !== "undefined" && window.innerWidth > 600 && (
           <div className="gap-6 lg:gap-10 mx-auto hidden sm:flex">
             {/* Features Dropdown */}
             <Dropdown
@@ -241,7 +241,7 @@ export const Navbar = () => {
       </div>
       {/* Mobile Dropdown Menu */}
       {isHamburgerClicked && (
-        <div className="bg-white z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
+        <div className="bg-[#f9f8f5] z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
           {/* Features */}
           <div className="w-[85vw] cursor-pointer">
             <div
@@ -396,7 +396,7 @@ export const Navbar = () => {
           <Link
             href="/book-a-demo"
             onClick={closeDropdownMob}
-            className="mt-16 text-center bg-primary text-white py-2 px-6 rounded-lg"
+            className="mt-16 w-[90%] text-center bg-primary text-white py-2 px-6 rounded-lg"
           >
             Book a Demo
           </Link>
