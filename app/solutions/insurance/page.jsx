@@ -49,19 +49,19 @@ export default function Insurance() {
             </span>{" "}
           </h5>
           
-          <div className="w-full flex flex-col sm:flex-row gap-8 sm:mt-14">
+          <div className="w-full flex flex-col sm:flex-row gap-8 sm:gap-20 mt-10 sm:mt-10">
             {/* First Row */}
             <div className="w-full flex sm:flex-row flex-wrap gap-8">
               <div className="w-full  flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
                 <Image
                   src={solution_insurance_fact1}
                   alt="landing_testimonial"
-                  className="rounded-full absolute  sm:right-10 top-5 sm:mt-6 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
+                  className="rounded-full absolute  sm:right-10 top-5 sm:mt-2 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
                 />
                 <span className="text-lg sm:text-xl mt-20 sm:mt-24">
                   Discover the Right Care, Effortlessly
                 </span>
-                <p className="mt-4 sm:mt-5 text-sm sm:text-base">
+                <p className="mt-4 sm:mt-5 text-sm ">
                   Patients upload a referral photo on WhatsApp, and our AI
                   instantly matches them with nearby, specialized hospitals.
                   This ensures medical needs are met with convenience and
@@ -77,7 +77,7 @@ export default function Insurance() {
                 <span className="text-lg sm:text-xl mt-20 sm:mt-12">
                   Book Appointments in a Flash
                 </span>
-                <p className="mt-4 sm:mt-5 text-sm sm:text-base">
+                <p className="mt-4 sm:mt-5 text-sm">
                   Patients can choose from AI-recommended hospitals. Book slots
                   directly through WhatsApp—no downloads, no hassle. Receive
                   instant confirmations, reminders, and updates to keep them on
@@ -87,17 +87,17 @@ export default function Insurance() {
             </div>
 
             {/* Second Row */}
-            <div className="w-full flex flex-wrap gap-8 sm:mt-10">
+            <div className="w-full flex flex-wrap gap-8 sm:mt-4 ">
               <div className="w-full  flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
                 <Image
                   src={solution_insurance_fact3}
                   alt="landing_testimonial"
                   className="rounded-full absolute sm:right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
                 />
-                <span className="text-lg sm:text-xl mt-20 sm:mt-12">
+                <span className="text-lg sm:text-xl mt-20  sm:mt-8">
                   Always-on Virtual Assistant
                 </span>
-                <p className="mt-4 sm:mt-5 text-sm sm:text-base">
+                <p className="mt-4 sm:mt-5 text-sm sm:text-sm">
                   Available 24/7 to answer patient queries about hospitals,
                   services, and procedures. Supports multiple languages to cater
                   to diverse patient needs. Provides step-by-step guidance for
@@ -113,7 +113,7 @@ export default function Insurance() {
                 <span className="text-lg sm:text-xl mt-20 sm:mt-12">
                   End-to-End Patient Engagement
                 </span>
-                <p className="mt-4 sm:mt-5 text-sm sm:text-base">
+                <p className="mt-4 sm:mt-5 text-sm sm:text-sm">
                   Keep patients informed at every step of the process: Referral
                   approvals, Appointment updates & Follow-up notifications.
                   Proactively share insights on healthcare options and services.
@@ -183,7 +183,7 @@ export default function Insurance() {
           </div>
 
           {/* Image Section */}
-          <div className="mt-10 lg:mt-0 flex justify-center items-center w-full lg:w-1/2">
+          <div className="hidden mt-10 lg:mt-0 justify-center items-center w-full lg:w-1/2">
             <Image
               alt="solution_insurance_section"
               src={solution_insurance_section}

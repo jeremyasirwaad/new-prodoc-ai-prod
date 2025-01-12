@@ -11,7 +11,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 function FAQ() {
   const router = useRouter();
   return (
-    <div className="  flex flex-col justify-center items-center  md:mt-12">
+    <div className="w-[85vw] mx-auto  flex flex-col justify-center items-center  md:mt-12">
       <Head>
         <title>FAQ - Prodoc by Growth Hacker Consulting</title>
         <meta
@@ -100,3 +100,4 @@ function FAQ() {
 }
 
 export default FAQ;
+
