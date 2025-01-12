@@ -14,6 +14,7 @@ import solution_hospital_section from "../../../assets/solutions/hospitals/solut
 import { useState } from "react";
 import solution_hospital_hero from "../../../assets/solutions/hospitals/solution_hospital_hero.png";
 import { FaCircleCheck } from "react-icons/fa6";
+import Link from "next/link";
 // app/content/page.jsx
 export default function ForHospital() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,8 +33,6 @@ export default function ForHospital() {
 
   return (
     <section className="flex flex-col pt-10 items-center justify-center">
-      
-     
       <div className="text-[30px] sm:text-[50px] text-center sm:text-left  sm:leading-[68px] mt-16 sm:mt-32 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:items-start gap-y-10 sm:gap-x-10">
         {/* Left Section */}
         <div className="flex flex-col w-full sm:w-[50%]">
@@ -82,17 +81,17 @@ export default function ForHospital() {
                 Communication
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center justify-center">
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
               <Image
                 src={solution_hospital_fact1_2}
                 alt="landing_testimonial"
                 className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
               />
               <p className="text-lg text-center  mt-4">
-                Efficient Interdepartmental Communication
+                Efficient Interdepartmental <br className="sm:hidden"></br> Communication
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center justify-center">
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
               <Image
                 src={solution_hospital_fact1_3}
                 alt="landing_testimonial"
@@ -102,7 +101,7 @@ export default function ForHospital() {
                 Targeted Campaigns for <br /> Maximum Impact
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center justify-center">
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
               <Image
                 src={solution_hospital_fact1_4}
                 alt="landing_testimonial"
@@ -117,7 +116,7 @@ export default function ForHospital() {
       </div>
 
       <div className="w-full flex items-center justify-center">
-        <div className="sm:mt-20 sm:mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
+        <div className="mt-10 sm:mt-20 sm:mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
           {/* Heading */}
           <h5 className="text-[30px] sm:text-[40px] xl:text-[50px] text-center">
             Prodoc opens the door to <br />
@@ -137,10 +136,10 @@ export default function ForHospital() {
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] sm:h-[100px] lg:h-[120px] w-[80px] sm:w-[100px] lg:w-[120px]"
               />
-              <span className="text-lg sm:text-lg lg:text-2xl mt-16 sm:mt-24">
+              <span className="text-xl sm:text-2xl  mt-16 sm:mt-24">
                 AI-powered Patient Engagement
               </span>
-              <p className="mt-5 text-sm sm:text-base lg:text-lg">
+              <p className="mt-5 text-base ">
                 Personalize patient journeys with automated appointment
                 reminders, pre-admission instructions, post-discharge
                 follow-ups, and tailored health education materials – all on
@@ -155,10 +154,10 @@ export default function ForHospital() {
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] sm:h-[100px] lg:h-[120px] w-[80px] sm:w-[100px] lg:w-[120px]"
               />
-              <span className="text-lg sm:text-lg lg:text-2xl mt-16 sm:mt-24">
+              <span className="text-xl sm:text-2xl  mt-16 sm:mt-24">
                 Enhanced Partner Collaboration
               </span>
-              <p className="mt-5 text-sm sm:text-base lg:text-lg">
+              <p className="mt-5 text-base">
                 Facilitate seamless communication between doctors, nurses,
                 specialists, and external partners, ensuring coordinated care
                 and efficient workflows.
@@ -175,10 +174,10 @@ export default function ForHospital() {
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] sm:h-[100px] lg:h-[120px] w-[80px] sm:w-[100px] lg:w-[120px]"
               />
-              <span className="text-lg sm:text-lg lg:text-2xl mt-16 sm:mt-24">
+              <span className="text-xl sm:text-2xl  mt-16 sm:mt-24">
                 Community Outreach Made Easy
               </span>
-              <p className="mt-5 text-sm sm:text-base lg:text-lg">
+              <p className="mt-5 text-base ">
                 Promote preventative care, wellness programs, and hospital
                 events through engaging community outreach initiatives on
                 WhatsApp and other popular channels.
@@ -192,10 +191,10 @@ export default function ForHospital() {
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] sm:h-[100px] lg:h-[120px] w-[80px] sm:w-[100px] lg:w-[120px]"
               />
-              <span className="text-lg sm:text-lg lg:text-2xl mt-16 sm:mt-24">
+              <span className="text-xl sm:text-2xl  mt-16 sm:mt-24">
                 Improved Patient Satisfaction
               </span>
-              <p className="mt-5 text-sm sm:text-base lg:text-lg">
+              <p className="mt-5 text-base">
                 Nurture patient relationships, address concerns, and gather
                 valuable feedback to continuously improve patient experience.
               </p>
@@ -237,8 +236,8 @@ export default function ForHospital() {
           </div>
         </div>
       </div> */}
-      <div className="w-full flex items-center justify-center bg-white">
-        <div className="w-[90vw] xl:w-[75vw] mt-20 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
+      <div className="w-full flex items-center justify-center bg-white ">
+        <div className="w-[90vw] xl:w-[75vw] mt-20 mb-10 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
           {/* Text Section */}
           <div className="flex items-start flex-col justify-start w-full lg:w-1/2">
             <h3 className="text-[30px] sm:text-[50px] mx-auto mb-6 sm:mb-10 text-center sm:text-left">
@@ -285,13 +284,13 @@ export default function ForHospital() {
                 <span className="text-primary text-2xl sm:text-4xl">
                   intelligent automation
                 </span>{" "}
-                that <br></br> drives operational efficiency<br className="sm:hidden"></br> and better patient
-                outcomes
+                that <br></br> drives operational efficiency
+                <br className="sm:hidden"></br> and better patient outcomes
               </span>
             </h3>
             <div className="flex items-center justify-center mt-8">
               <div className="bg-primary w-fit text-white px-8 py-4 rounded-3xl">
-                Book a Demo
+                <Link href={"/book-a-demo"}>Book a Demo</Link>
               </div>
             </div>
           </div>
