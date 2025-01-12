@@ -54,7 +54,7 @@ export default function LandingPage() {
       <div className="mt-10 sm:mt-20">
         <Link
           href="/book-a-demo"
-          className="bg-primary text-white px-4 py-3 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
+          className="bg-primary text-white px-5 py-4 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
         >
           Schedule a meeting
         </Link>
