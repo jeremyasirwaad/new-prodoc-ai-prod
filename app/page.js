@@ -35,7 +35,7 @@ export default function LandingPage() {
   return (
 
     <section className="flex flex-col items-center justify-center px-4 sm:px-0">
-      <div className="mt-28  text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] sm:mt-32  sm:h-[200px]">
+      <div className="mt-20  text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] sm:mt-32  sm:h-[200px]">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[50px] ">
           Enhance{" "}
           <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
@@ -63,7 +63,7 @@ export default function LandingPage() {
       <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-16 mb-12 sm:mb-16">
         <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
       </div>
-      <div className="bg-white w-full py-5 flex flex-col items-center justify-center">
+      <div className="bg-white w-[100vw] py-5 flex flex-col items-center justify-center">
         <Marquee>
           {slider_logo.map((logo) => {
             return (
@@ -257,8 +257,8 @@ export default function LandingPage() {
           height={250}
         />
       </div> */}
-      <div className="w-full flex bg-blue-900 text-white p-6 sm:p-12  flex-col relative items-center gap-12">
-        <div className="flex flex-col items-center w-full justify-center gap-12 sm:gap-24">
+      <div className="w-[100vw] flex bg-blue-900 text-white p-6 sm:p-12  flex-col relative items-center gap-10">
+        <div className="flex flex-col items-center w-full justify-center gap-12 sm:gap-16">
           <h3 className="leading-tight text-[28px] sm:text-[45px] text-center">
             Transform Patient Communication <br />
             with{" "}
@@ -387,17 +387,17 @@ export default function LandingPage() {
       <Divider />
       <div className="flex flex-col   justify-between  items-center w-[65vw] sm:flex-row ">
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-4 sm:mt-6">1M+</p>
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">1M+</p>
           <p className="text-lg sm:text-xl">Patients Engaged</p>
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-4 sm:mt-6">10K+</p>
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">10K+</p>
           <p className="text-lg sm:text-xl">Daily Interactions</p>
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-4 sm:mt-6">100+</p>
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-4 sm:mt-6">100+</p>
           <p className="text-lg sm:text-xl">Healthcare Providers</p>
         </div>
         {/* </div> */}
@@ -441,7 +441,7 @@ export default function LandingPage() {
         </div>
       </div> */}
 
-      <div className="flex mt-14 items-center justify-center w-full bg-white px-4 sm:px-0">
+      <div className="flex mt-14 items-center justify-center w-[100vw] bg-white px-4 sm:px-0">
         <div className="text-[24px] text-center mb-12 gap-8 w-[95vw] flex flex-col sm:leading-[68px] sm:flex-row items-center sm:mt-20 sm:justify-between sm:text-left sm:mb-20 sm:text-[50px] sm:gap-x-10 xl:w-[75vw]">
           {/* Left Section */}
           <div className="flex flex-col mt-8 w-full sm:w-[50%]">
@@ -614,8 +614,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div> */}
-      <div className="flex items-center justify-center w-full bg-white">
-        <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[40px] sm:leading-[68px] mt-10 sm:mt-20 mb-12 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:justify-between gap-12 sm:gap-x-10">
+      <div className="flex items-center justify-center w-[100vw] bg-white">
+        <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[40px] sm:leading-[68px] mt-10 sm:mt-20 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:justify-between gap-12 sm:gap-x-10">
           {/* Left Section */}
           <div className="flex flex-col w-full sm:w-[50%] ">
             {/* <h5 className="text-[30px] mx-24 sm:text-[50px] xs:text-center sm:text-left">
@@ -640,7 +640,7 @@ export default function LandingPage() {
           </div>
 
           {/* Right Section */}
-          <div className="w-full sm:w-[50%] p-2 sm:p-10 MyGradient">
+          <div className="w-[100vw] sm:w-[50%] p-2 sm:p-10 MyGradient">
             <Marquee speed={40} direction="left">
               {firstMarqueePluginLogos.map((logo) => (
                 <Image
@@ -825,7 +825,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <div className="w-full bg-white relative flex items-center justify-center">
+      <div className="w-[100vw] bg-white relative flex items-center justify-center">
         <div className="mt-20 mb-20">
           <div className="">
             <h3 className="text-4xl text-black text-center">
@@ -841,10 +841,10 @@ export default function LandingPage() {
             </h3>
             <div className="w-full flex items-center justify-center flex-col">
               <div className="mt-20 w-[90vw] xl:w-[75vw] rounded-2xl flex items-center justify-center flex-col">
-                <span className="text-center text-[45px]">
-                  Book a <span className="text-black text-[45px]">Demo</span>
+                <span className="text-center text-[30px]  sm:text-[45px]">
+                  Book a <span className="text-black  text-center text-[30px]  sm:text-[45px]">Demo</span>
                 </span>
-                <p className="text-left sm:text-lg ">
+                <p className="text-center text-sm sm:text-lg ">
                   Please complete the form and learn how our solutions can
                   enhance your organization's healthcare goals
                 </p>
