@@ -11,7 +11,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 function FAQ() {
   const router = useRouter();
   return (
-    <div className="w-[85vw] mx-auto  flex flex-col justify-center items-center  md:mt-12">
+    <div className="w-[95vw] mx-auto  flex flex-col justify-center items-center  md:pt-12">
       <Head>
         <title>FAQ - Prodoc by Growth Hacker Consulting</title>
         <meta
@@ -50,11 +50,11 @@ function FAQ() {
         </div>
       </div>
 
-      <h1 className="text-[40px] mt-14">
+      <h1 className="text-[30px] sm:text-[40px] mt-14 p-4">
         Frequently Asked Questions
       </h1>
 
-      <div className="mt-10  w-full mb-16 ">
+      <div className=" w-full mb-16 ">
         {faqData.map((section) => (
           <div
             key={section.section}
@@ -67,12 +67,12 @@ function FAQ() {
               <Disclosure key={index}>
                 {({ open }) => (
                   <div>
-                    <Disclosure.Button className="flex justify-between items-center w-full px-4 py-3 my-2 text-left text-base font-medium bg-[#f6f5f4] rounded-lg hover:bg-[#fafafa] focus:outline-none focus-visible:ring focus-visible:ring-gray-500/75">
+                    <Disclosure.Button className="flex justify-between items-center w-full px-4 py-3 my-2 text-left font-medium bg-[#f6f5f4] rounded-lg hover:bg-[#fafafa] focus:outline-none focus-visible:ring focus-visible:ring-gray-500/75 gap-x-10">
                       <span>{item.question}</span>
                       <FaChevronUp
                         className={`${
                           open ? "transform rotate-180" : ""
-                        } w-5 h-5 `}
+                        } text-lg w-[30px]`}
                       />
                     </Disclosure.Button>
 

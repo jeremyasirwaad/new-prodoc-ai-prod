@@ -33,9 +33,9 @@ export default function ForHospital() {
 
   return (
     <section className="flex flex-col pt-10 items-center justify-center">
-      <div className="text-[30px] sm:text-[50px] text-center sm:text-left  sm:leading-[68px] mt-16 sm:mt-32 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:items-start gap-y-10 sm:gap-x-10">
+      <div className="text-[30px] sm:text-[50px] text-center sm:text-left  sm:leading-[68px] mt-16 sm:mt-32 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:items-center gap-y-10 sm:gap-x-10">
         {/* Left Section */}
-        <div className="flex flex-col w-full sm:w-[50%]">
+        <div className="flex flex-col w-full sm:w-[50%] sm:justify-center">
           <h1 className="text-[30px] sm:text-[50px] font-[400] text-left">
             Empower Patients and <br />
             <span className="text-primary text-[30px] sm:text-[50px] font-[400]">
