@@ -1,4 +1,3 @@
-// src/app/blogs/page.jsx
 import BlogList from '@/components/Blogs/BlogList';
 import { fetchBlogs } from '@/helpers/fetchBlogs';
 import Head from 'next/head';

@@ -11,6 +11,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#1772d2", // Added primary brand color
+
+        "blue-dark": "#000033", // Define your custom color
       },
     },
   },

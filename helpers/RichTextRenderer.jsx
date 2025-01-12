@@ -35,7 +35,7 @@ const RichTextRenderer = ({ content }) => {
                 blockquote: ({ node, ...props }) => <blockquote className="border-l-4 border-gray-800 pl-4 italic" {...props} />,
                 img: ({ node, ...props }) => (
                     <div className="w-full flex justify-center my-4">
-                        <img className="max-w-full h-auto object-contain rounded-lg" loading="lazy" {...props} />
+                        <img alt="alternative text" className="max-w-full h-auto object-contain rounded-lg" loading="lazy" {...props} />
                     </div>
                 ),
                 a: ({ node, ...props }) => <a className="hover:text-blue-400 text-black underline" target="_blank" rel="noopener noreferrer" {...props} />,

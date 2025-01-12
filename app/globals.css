@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,7 +8,7 @@
   --background: #f9f8f5;
 }
 
-*{
+* {
   font-family: "Inter", serif;
   font-size: 16px;
 }
@@ -18,7 +18,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .custom-dots {
   position: absolute;
@@ -32,3 +31,34 @@ body {
 .custom-dots li.slick-active button {
   background-color: #000;
 }
+
+.MyGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    /* Fully transparent at start */ rgba(0, 0, 0, 0.9) 10%,
+    /* 75% opacity at 20% */ rgba(0, 0, 0, 1) 90%,
+    /* 75% opacity at 80% */ rgba(0, 0, 0, 0.4) /* Fully transparent at end*/
+  );
+}
+
+.MyGradient {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    /* Fully transparent at start */ rgba(0, 0, 0, 0.9) 10%,
+    /* 75% opacity at 20% */ rgba(0, 0, 0, 1) 90%,
+    /* 75% opacity at 80% */ rgba(0, 0, 0, 0.4) /* Fully transparent at end*/
+  );
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(0, 0, 0, 0.9) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* * {
+  border: 1px solid red;
+} */

@@ -1,60 +1,294 @@
+// import { Divider } from "antd";
+// import logo_large from "../../assets/logo_large.png";
+// import Image from "next/image";
+// import { FaFacebook, FaLinkedin } from "react-icons/fa";
+// import { FaInstagramSquare } from "react-icons/fa";
+// import { FaYoutube } from "react-icons/fa";
+// import Link from "next/link";
+
+// export const Footer = () => {
+//   return (
+//     // <div className="w-full flex items-center flex-col pb-20 justify-center bg-white px-4 sm:px-0">
+//     //   <div className="w-full flex items-center flex-col justify-center">
+//     //     <div className="w-[90vw]  flex items-start justify-between xl:w-[65vw]">
+//     //       <Divider />
+//     //     </div>
+
+//     //     <div className="w-[90vw] mt-6  sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-0 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
+//     //       <div className="flex flex-col items-center justify-center w-full sm:w-auto">
+//     //         <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
+//     //         <Link href={"/features/patient-connect"} className="mt-4">
+//     //           Patient Connect
+//     //         </Link>
+//     //         <Link href={"/features/smart-consult"} className="mt-2">
+//     //           Smart Consultation
+//     //         </Link>
+//     //         <Link href={"/features/care-navigator"} className="mt-2">
+//     //           Care Navigator
+//     //         </Link>
+//     //         <Link href={"/features/patient-outreach"} className="mt-2">
+//     //           Patient Outreach
+//     //         </Link>
+//     //       </div>
+
+//     //       <div className="flex flex-col items-center justify-center w-full sm:w-auto">
+//     //         <h3 className="text-lg font-semibold text-[#072646]">Solutions</h3>
+//     //         <Link href={"/solutions/hospital"} className="mt-4">
+//     //           For Hospital
+//     //         </Link>
+//     //         <Link href={"/solutions/insurance"} className="mt-2">
+//     //           For Insurance
+//     //         </Link>
+//     //       </div>
+
+//     //       <div className="flex flex-col items-center justify-center w-full sm:w-auto">
+//     //         <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
+//     //         <Link href={"/llms/open-source"} className="mt-4">
+//     //           Open Sourced LLMs
+//     //         </Link>
+//     //       </div>
+
+//     //       <div className="flex flex-col items-center justify-center w-full sm:w-auto">
+//     //         <h3 className="text-lg font-semibold text-[#072646]">Resources</h3>
+//     //         <Link href={"/blogs"} className="mt-4">
+//     //           Blogs
+//     //         </Link>
+//     //         <Link href={"/faq"} className="mt-2">
+//     //           FAQs
+//     //         </Link>
+//     //         <Link href={"/partner"} className="mt-2">
+//     //           Become a Partner
+//     //         </Link>
+//     //       </div>
+//     //       <div className="flex flex-col text-center sm:flex-row gap-5 gap-x-10 ">
+//     //         <Link
+//     //           href={"/privacy-policy"}
+//     //           className="text-lg font-semibold  text-[#072646]"
+//     //         >
+//     //           Privacy Policy
+//     //         </Link>
+//     //         <Link
+//     //           href={"/terms-conditions"}
+//     //           className="text-lg font-semibold text-[#072646]"
+//     //         >
+//     //           Term & Conditions
+//     //         </Link>
+//     //         <Link href={"/faq"} className="text-lg font-semibold text-[#072646]">
+//     //           FAQs
+//     //         </Link>
+//     //       </div>
+//     //     </div>
+//     //   </div>
+//     // </div>
+//     <div className="w-full flex items-center flex-col pb-20 justify-center bg-white px-4 sm:px-0">
+//       <div className="w-full flex items-center flex-col justify-center">
+//         {/* Divider Section */}
+//         <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
+//           <Divider />
+//         </div>
+
+//         {/* Content Section */}
+//         <div className="w-[90vw] mt-6 sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-4 lg:gap-8 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
+//           {/* Features Section */}
+
+//           <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+//             <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
+//             <Link href={"/features/patient-connect"} className="mt-4">
+//               Patient Connect
+//             </Link>
+//             <Link href={"/features/smart-consult"} className="mt-2">
+//               Smart Consultation
+//             </Link>
+//             <Link href={"/features/care-navigator"} className="mt-2">
+//               Care Navigator
+//             </Link>
+//             <Link href={"/features/patient-outreach"} className="mt-2">
+//               Patient Outreach
+//             </Link>
+//           </div>
+
+//           {/* Solutions Section */}
+//           <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+//             <h3 className="text-lg font-semibold text-[#072646]">Solutions</h3>
+//             <Link href={"/solutions/hospital"} className="mt-4">
+//               For Hospital
+//             </Link>
+//             <Link href={"/solutions/insurance"} className="mt-2">
+//               For Insurance
+//             </Link>
+//           </div>
+
+//           {/* LLMs Section */}
+//           <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+//             <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
+//             <Link href={"/llms/open-source"} className="mt-4">
+//               Open Sourced LLMs
+//             </Link>
+//           </div>
+
+//           {/* Resources Section */}
+//           <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+//             <h3 className="text-lg font-semibold text-[#072646]">Resources</h3>
+//             <Link href={"/blogs"} className="mt-4">
+//               Blogs
+//             </Link>
+//             <Link href={"/faq"} className="mt-2">
+//               FAQs
+//             </Link>
+//             <Link href={"/partner"} className="mt-2">
+//               Become a Partner
+//             </Link>
+//           </div>
+//         </div>
+
+//         {/* Footer Links Section */}
+//         <div className="w-[90vw] mt-8 flex flex-col sm:flex-row gap-8 gap-x-5 justify-center text-center  xl:w-[65vw]">
+//           <div className="logo">
+//             <Image src={logo_large} className="h-auto w-44" />
+//           </div>
+//           <div>
+//             <div className="flex gap-x-6">
+//               <FaLinkedin size={24} />
+//               <FaInstagramSquare size={24} />
+//               <FaYoutube size={24} />
+//             </div>
+//             <Link
+//               href={"/privacy-policy"}
+//               className="text-lg font-semibold text-[#072646]"
+//             >
+//               Privacy Policy
+//             </Link>
+//             <Link
+//               href={"/terms-conditions"}
+//               className="text-lg font-semibold text-[#072646]"
+//             >
+//               Terms & Conditions
+//             </Link>
+//             <Link
+//               href={"/faq"}
+//               className="text-lg font-semibold text-[#072646]"
+//             >
+//               FAQs
+//             </Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Footer;
 import { Divider } from "antd";
 import logo_large from "../../assets/logo_large.png";
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex items-center flex-col pb-20 justify-cente bg-white">
-      <div className="w-full flex items-center flex-col justify-center  ">
-        <div className="w-[90vw] xl:w-[65vw] flex items-start justify-between">
+    <div className="w-full flex items-center flex-col pb-20 justify-center bg-white px-4 sm:px-0">
+      <div className="w-full flex items-center flex-col justify-center">
+        {/* Divider Section */}
+        <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
           <Divider />
         </div>
-        <div className="w-[90vw] xl:w-[65vw] mt-16 mb-16 flex items-start justify-between">
-          <div className="flex flex-col items-start justify-center">
-            <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
-            <span className="mt-6">Patient Connect</span>
-            <span className="mt-2">Smart Consultation</span>
-            <span className="mt-2">Care Navigator</span>
-            <span className="mt-2">Patient Outreach</span>
-          </div>
-          <div className="flex flex-col items-start justify-center">
-            <h3 className="text-lg font-semibold text-[#072646]">Solutions</h3>
-            <span className="mt-6">For Hospital</span>
-            <span className="mt-2">For Insurance</span>
-          </div>
-          <div className="flex flex-col items-start justify-center">
-            <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
-            <span className="mt-6">Open Sourced LLMs</span>
-          </div>
-          <div className="flex flex-col items-start justify-center">
-            <h3 className="text-lg font-semibold text-[#072646]">Resources</h3>
-            <span className="mt-6">Blogs</span>
-            <span className="mt-2">FAQs</span>
-            <span className="mt-2">Become a Partner</span>
-          </div>
-        </div>
-      </div>
 
-      <div className="flex items-start mt-10 justify-between w-[90vw] xl:w-[65vw] ">
-        <div className="logo">
-          <Image src={logo_large} className="h-auto w-44" />
-        </div>
-        <div className="flex flex-col items-end">
-          <div className="flex gap-x-6">
-            <FaLinkedin size={24} />
-            <FaInstagramSquare size={24} />
-            <FaYoutube size={24} />
+        {/* Content Section */}
+        <div className="w-[90vw] mt-6 sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-4 lg:gap-8 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
+          {/* Features Section */}
+          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+            <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
+            <Link href={"/features/patient-connect"} className="mt-4">
+              Patient Connect
+            </Link>
+            <Link href={"/features/smart-consult"} className="mt-2">
+              Smart Consultation
+            </Link>
+            <Link href={"/features/care-navigator"} className="mt-2">
+              Care Navigator
+            </Link>
+            <Link href={"/features/patient-outreach"} className="mt-2">
+              Patient Outreach
+            </Link>
           </div>
-          <div className="flex gap-x-10 mt-8 ">
-            <span className="text-sm text-gray-700">Privacy Policy</span>
-            <span className="text-sm text-gray-700">Term & Conditions</span>
-            <span className="text-sm text-gray-700">FAQs</span>
+
+          {/* Solutions Section */}
+          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+            <h3 className="text-lg font-semibold text-[#072646]">Solutions</h3>
+            <Link href={"/solutions/hospital"} className="mt-4">
+              For Hospital
+            </Link>
+            <Link href={"/solutions/insurance"} className="mt-2">
+              For Insurance
+            </Link>
+          </div>
+
+          {/* LLMs Section */}
+          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+            <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
+            <Link href={"/llms/open-source"} className="mt-4">
+              Open Sourced LLMs
+            </Link>
+          </div>
+
+          {/* Resources Section */}
+          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+            <h3 className="text-lg font-semibold text-[#072646]">Resources</h3>
+            <Link href={"/blogs"} className="mt-4">
+              Blogs
+            </Link>
+            <Link href={"/faq"} className="mt-2">
+              FAQs
+            </Link>
+            <Link href={"/partner"} className="mt-2">
+              Become a Partner
+            </Link>
+          </div>
+        </div>
+
+        {/* Footer Links Section */}
+        <div className="w-[90vw] mt-8 flex flex-col sm:flex-row gap-8 justify-center sm:justify-around xl:w-[65vw]">
+          {/* Logo Section */}
+          <div className="hidden w-full sm:w-1/4 sm:flex items-center justify-start">
+            <Image src={logo_large} className="h-auto w-44" alt="Prodoc Logo" />
+          </div>
+
+          {/* Social Icons Section */}
+          <div className="w-full sm:w-1/4 flex flex-col items-center sm:items-start justify-center text-center sm:text-left gap-4">
+            <div className="flex gap-6 sm:justify-end">
+              <Link href="https://www.facebook.com/prodoc.io/" target="_blank">
+                <FaFacebook size={24} />
+              </Link>
+              <Link href="https://www.instagram.com/prodoc.io/" target="_blank">
+                <FaInstagramSquare size={24} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/prodoc-io/"
+                target="_blank"
+              >
+                <FaLinkedin size={24} />
+              </Link>
+              <Link
+                href="https://www.youtube.com/channel/prodoc-io"
+                target="_blank"
+              >
+                <FaYoutube size={24} />
+              </Link>
+            </div>
+
+            {/* Legal Links */}
+            <div className="mt-4 sm:mt-2 flex flex-col sm:flex-row gap-5 sm:gap-24 text-lg font-semibold text-[#072646]">
+              <Link href={"/privacy-policy"}>Privacy Policy</Link>
+              <Link href={"/terms-conditions"}>Terms & Conditions</Link>
+              <Link href={"/faq"}>FAQs</Link>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+export default Footer;
