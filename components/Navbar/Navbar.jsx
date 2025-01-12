@@ -34,11 +34,7 @@ export const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-<<<<<<< HEAD
       <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10 justify-between">
-=======
-      <div className="h-[88px] z-50  fixed w-full flex items-center px-4 sm:px-10 justify-between">
->>>>>>> 86fc244d303bef28b6414d0d594895f06fb8283c
         {/* Logo */}
         <Link href="/" className="cursor-pointer" onClick={closeDropdownMob}>
           <Image
