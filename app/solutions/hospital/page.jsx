@@ -32,37 +32,12 @@ export default function ForHospital() {
 
   return (
     <section className="flex flex-col pt-10 items-center justify-center">
-      {/* <div className="text-[50px] text-center leading-[68px] mt-32 mb-20  w-[90vw] xl:w-[75vw] flex items-center gap-x-10">
-        <div className="text-[50px] flex flex-col w-[50%]">
-          <h1 className="font-[400]  text-left">
-            Empower Patients and <br />
-            <span className="text-primary text-[50px] font-[400]">
-              Streamline Operations
-            </span>{" "}
-          </h1>
-          <h3 className="text-lg mt-6 text-left">
-            Hospitals face a unique challenge of fostering patient connections
-            while managing complex workflows.
-            
-            <br />
-            <p className="mt-4">
-              We empower hospitals to nurture patient relationships through
-              AI-powered communication, streamlining workflows for efficient
-              care.
-            </p>
-          </h3>
-          <button className="bg-primary w-fit h-fit mt-6 text-base text-white px-8 py-4 rounded-3xl">
-            Start Now
-          </button>
-        </div>
-        <div className="w-[50%] bg-red">
-          <Image src={solution_hospital_hero} alt="alt" />
-        </div>
-      </div> */}
+      
+     
       <div className="text-[30px] sm:text-[50px] text-center sm:text-left  sm:leading-[68px] mt-16 sm:mt-32 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:items-start gap-y-10 sm:gap-x-10">
         {/* Left Section */}
         <div className="flex flex-col w-full sm:w-[50%]">
-          <h1 className="text-[30px] font-[400] text-left">
+          <h1 className="text-[30px] sm:text-[50px] font-[400] text-left">
             Empower Patients and <br />
             <span className="text-primary text-[30px] sm:text-[50px] font-[400]">
               Streamline Operations

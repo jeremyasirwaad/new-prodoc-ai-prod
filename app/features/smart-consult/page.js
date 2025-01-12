@@ -43,7 +43,6 @@ export default function SmartConsultaion() {
           <Image src={smart_consult_hero} alt="alt" className="rounded-3xl" />
         </div>
       </div>
-
       <div className="w-full bg-white flex items-center justify-center">
         <div className="mt-10 sm:mt-16 mb-10 sm:mb-28 w-[90vw] xl:w-[75vw] flex flex-col gap-y-10 sm:gap-y-20">
           {/* Step 1 */}
@@ -101,21 +100,16 @@ export default function SmartConsultaion() {
           </div>
         </div>
       </div>
-
-      {/* Scroller End */}
-
-     
-        {" "}
-        
-        {/* Left Section */}
-        <div className="w-[90vw] gap-2 sm:gap-3 flex flex-col items-start justify-start sm:w-[75vw]  mt-8 sm:mb-8">
+      {/* Scroller End */} {/* Left Section */}
+      <div className="w-[90vw] gap-2 sm:gap-3 flex flex-col sm:flex-row items-start justify-start sm:w-[75vw]  mt-8 sm:mb-8">
+        <div>
           <h3 className="text-2xl sm:text-5xl mb-6 sm:mb-10 text-left">
             Why Choose Prodoc AI Q&A?
           </h3>
 
           <h3 className=" text-base mb-2 flex items-center gap-8 sm:gap-8 sm:text-lg">
             <FaCircleCheck size={22} color="#1772d2" />{" "}
-            <span >
+            <span>
               Always on, ensuring patients get the help they need anytime
             </span>
           </h3>
@@ -143,17 +137,16 @@ export default function SmartConsultaion() {
             <FaCircleCheck size={22} color="#1772d2" />
             <span>Quick, clear, and professional responses</span>
           </h3>
-          <div className=" hidden sm:flex sm:mt-6 justify-center sm:justify-end items-center w-full sm:w-1/2">
-            <Image
-              alt="patient_outreact_section_1"
-              src={smart_consult_section}
-              className="w-[80%] sm:w-[400px] h-auto object-contain"
-            />
-          </div>
         </div>
-        {/* Right Section (Image) */}
-      
-
+        <div className=" hidden sm:flex sm:mt-6 justify-center sm:justify-end items-center w-full sm:w-1/2">
+          <Image
+            alt="patient_outreact_section_1"
+            src={smart_consult_section}
+            className="w-[80%]  h-auto object-contain"
+          />
+        </div>
+      </div>
+      {/* Right Section (Image) */}
       <div className="w-full bg-white relative flex items-center justify-center">
         <div className="mt-10 mb-10 sm:mt-20 sm:mb-20">
           <div className="">
