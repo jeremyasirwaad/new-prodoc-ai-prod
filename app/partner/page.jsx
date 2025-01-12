@@ -33,27 +33,29 @@ export default function Partners() {
 
   return (
     <section className="pt-12 flex flex-col items-center justify-center">
-      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[55px] md:leading-[68px] pt-16 sm:pt-0 sm:mt-24 md:mt-32 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
+      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[70px]  pt-16 sm:pt-0 sm:mt-24 md:mt-32 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
         {/* Text Section */}
         <div className="flex flex-col w-full md:w-[50%]">
-          <p className="sm:text-left text-[30px] sm:text[40px]">
+          <p className="sm:text-left text-[20px] sm:text[30px]">
             Prodoc Affiliate Partnership Program
           </p>
-          <h1 className="font-[400] text-[30px] sm:text-[40px]sm:text-left">
+          <h1 className="font-[400] text-[30px] sm:text-[55px] sm:text-left">
             Empower Businesses
             <br />
-            <span className="text-primary text-[30px] sm:text[40px] font-[400]">
+            <span className="text-primary text-[30px] sm:text-[55px] font-[400]">
               Earn Rewards
             </span>
           </h1>
-          <h3 className="text-sm sm:text-base md:text-lg mt-4 sm:mt-6 text-left">
+          <h3 className="text-sm sm:text-base md:text-lg mt-4 sm:mt-6 text-center sm:text-left">
             The Prodoc Affiliate Partnership Program allows you to promote our
             innovative patient engagement platform and earn exciting rewards for
             every successful referral or sale.
           </h3>
-          <button className="bg-primary w-fit h-fit mt-4 sm:mt-6 text-sm sm:text-base text-white px-6 sm:px-8 py-3 sm:py-4 rounded-3xl">
-            Enroll as a Partner
-          </button>
+          <div className="flex w-full items-center justify-center sm:justify-start">
+            <button className="bg-primary w-fit h-fit mt-4 sm:mt-6 text-sm sm:text-base text-white px-6 sm:px-8 py-3 sm:py-4 rounded-3xl">
+              Enroll as a Partner
+            </button>
+          </div>
         </div>
 
         {/* Image Section */}
