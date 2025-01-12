@@ -239,7 +239,7 @@ export const Navbar = () => {
           )}
         </div>
       </div>
-      {/* Mobile Dropdown Menu */}:{" "}
+      {/* Mobile Dropdown Menu */}
       {isHamburgerClicked && (
         <div className="bg-white z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
           {/* Features */}
