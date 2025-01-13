@@ -36,7 +36,11 @@ export const Navbar = () => {
       {/* Navbar Container */}
       <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10">
         {/* Logo */}
-        <Link href="/" className="absolute left-10 cursor-pointer" onClick={closeDropdownMob}>
+        <Link
+          href="/"
+          className="absolute left-10 cursor-pointer"
+          onClick={closeDropdownMob}
+        >
           <Image
             src={logo_large}
             alt="logo"
@@ -223,7 +227,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Mobile Menu */}
-        <div className="sm:hidden flex items-center">
+        <div className="sm:hidden flex items-center absolute right-5">
           {isHamburgerClicked ? (
             <IoClose
               className="m-3 text-3xl text-gray-800 cursor-pointer"
@@ -402,17 +406,17 @@ export const Navbar = () => {
           </Link>
         </div>
       )}
-      <div className="w-full bg-[#aed4ff] z-40 fixed top-[88px] hidden h-[70px] sm:flex justify-center items-center">
-        <span className="text-sm">
-          <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
-            NEW YEAR OFFER
-          </button>
+      <div className="w-full bg-[#aed4ff] z-40 flex-col  hidden  sm:flex justify-center items-center">
+        <div className="h-[88px] w-full"></div>
+        <div className="py-4">
           <span className="text-sm">
-            Start your journey today with 20% off your first month!
+            <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
+              NEW YEAR OFFER
+            </button>
+            <span className="text-sm">
+              Start your journey today with 20% off your first month!
+            </span>
           </span>
-        </span>
-        <div className="absolute right-10">
-          <IoMdClose size={24} />
         </div>
       </div>
     </div>

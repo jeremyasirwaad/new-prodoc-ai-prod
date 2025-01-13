@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function SmartConsultaion() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[48px] sm:leading-[68px] mt-32 sm:mt-64 mb-10 sm:mb-20 sm:w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center gap-y-10 sm:gap-x-10">
+      <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[48px] sm:leading-[68px] mt-32 sm:mt-32 mb-10 sm:mb-20 sm:w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center gap-y-10 sm:gap-x-10">
         {/* Left Section */}
         <div className="text-[30px] sm:text-[50px] lg:text-[50px] flex flex-col w-[90vw] sm:w-[50%]">
           <h1 className="font-[400] sm:text-left">

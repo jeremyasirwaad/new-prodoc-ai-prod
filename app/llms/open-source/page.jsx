@@ -23,7 +23,7 @@ export default function LLMOpenSource() {
           openly available through Prodoc AI's commitment to open source
         </h3>
       </div> */}
-      <div className="text-[30px] sm:text-[40px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] mt-10 md:leading-[68px] pt-24 sm:mt-32 h-auto ">
+      <div className="text-[30px] sm:text-[40px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] mt-10 md:leading-[68px] pt-24  h-auto ">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]">
           Explore Our <br className="sm:hidden"></br>
           <span className="text-primary text-[30px] sm:text-[40px] md:text-[55px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
@@ -39,7 +39,7 @@ export default function LLMOpenSource() {
         </h3>
       </div>
 
-      <div className="w-fit mt-10">
+      <div className="w-fit mt-10 mb-10">
         <div className="bg-primary text-white px-8 py-4 rounded-3xl hover:bg-primary/90 transition-colors duration-200 cursor-pointer flex items-center gap-2">
           <span>Explore Our Models</span>
           <svg

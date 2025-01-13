@@ -35,20 +35,20 @@ export default function LandingPage() {
 
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
-      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] mt-32 sm:mt-64   sm:h-[200px]">
+      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] mt-32 sm:h-[200px]">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[50px] ">
           Enhance{" "}
           <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
             healthcare
           </span>{" "}
-          with
+          with AI-powered
           <br />
-          AI-powered{" "}
           <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
             patient engagement
-            <br />
           </span>{" "}
-          for better outcomes
+          solutions to
+          <br />
+          achieve better outcomes
         </h1>
       </div>
       <div className="mt-10 sm:mt-12">
@@ -264,9 +264,7 @@ export default function LandingPage() {
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10  sm:mt-6">
-            100+
-          </p>
+          <p className="text-[40px] sm:text-[65px] mt-10  sm:mt-6">100+</p>
           <p className="text-lg sm:text-xl">Healthcare Providers</p>
         </div>
         {/* </div> */}
@@ -324,7 +322,6 @@ export default function LandingPage() {
             Value delivered to <br /> our customers
           </h5>
           <div className="mt-10 flex flex-col sm:flex-row w-full gap-6 sm:gap-0">
-     
             <div className="flex flex-col border-l-0 sm:border-l-2 sm:p-4 sm:w-1/4 text-center sm:text-left">
               <p className="text-[40px] sm:text-[55px] font-semibold text-primary">
                 30%
@@ -366,7 +363,7 @@ export default function LandingPage() {
         <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[40px] sm:leading-[68px] mt-10 sm:mt-20 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:justify-between gap-12 sm:gap-x-10">
           <div className="flex flex-col w-full sm:w-[50%] ">
             <h5 className="text-[30px] text-center sm:text-left sm:text-[50px]">
-              Effortless API 
+              Effortless API
               <br className="" />
               <span className="text-primary text-[30px] sm:text-[50px]">
                 Integrations
@@ -381,7 +378,6 @@ export default function LandingPage() {
               support.
             </h3>
           </div>
-
 
           <div className="w-[100vw] sm:w-[50%] p-2 sm:p-10 MyGradient">
             <Marquee speed={40} direction="left">
@@ -630,7 +626,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      
     </section>
   );
 }

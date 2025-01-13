@@ -11,7 +11,7 @@ import solution_insurance_section from "../../../assets/solutions/insurance/solu
 export default function Insurance() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="pt-10 sm:pt-0 text-[30px] sm:text-[50px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] md:leading-[68px] mt-16 sm:mt-64  h-auto">
+      <div className="pt-10 sm:pt-0 text-[30px] sm:text-[50px] md:text-[55px] text-center leading-[40px] sm:leading-[55px] md:leading-[68px] mt-16 sm:mt-32  h-auto">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]">
           Transforming <br className="sm:hidden"></br>
           <span className="text-primary text-[30px] sm:text-[50px] md:text-[55px] font-[400] tracking-[0.5px] sm:tracking-[1px]">

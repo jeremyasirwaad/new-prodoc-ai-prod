@@ -58,7 +58,7 @@ export default function PatientConnect() {
 
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 sm:mt-64 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-x-10">
+      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 sm:mt-32 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-x-10">
         <div className="text-[40] flex flex-col sm:w-[50%]">
           <h1 className="font-[400] text-center text-[30px] sm:text-[50px]  sm:text-left ">
             Enhance{" "}

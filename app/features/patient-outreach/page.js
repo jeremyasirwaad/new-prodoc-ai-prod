@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function PatientOutreach() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className=" text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-28  sm:mt-64 h-[204px]">
+      <div className=" text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-28  sm:mt-32 h-[204px]">
         <h1 className="font-[400] tracking-[1px]">
           Empower <br className="sm:hidden"></br>
           <span className="text-primary text-[30px] sm:text-[50px] font-[400] tracking-[1px]">

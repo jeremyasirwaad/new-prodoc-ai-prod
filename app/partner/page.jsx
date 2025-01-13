@@ -33,7 +33,7 @@ export default function Partners() {
 
   return (
     <section className="pt-12 flex flex-col items-center justify-center">
-      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[70px]  pt-16 sm:pt-0 sm:mt-48 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
+      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[70px]  pt-16 sm:pt-0 sm:mt-16 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
         {/* Text Section */}
         <div className="flex flex-col w-full md:w-[50%]">
           <p className="sm:text-left text-[20px] sm:text[30px]">
