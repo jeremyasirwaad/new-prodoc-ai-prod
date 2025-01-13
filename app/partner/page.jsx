@@ -33,7 +33,7 @@ export default function Partners() {
 
   return (
     <section className="pt-12 flex flex-col items-center justify-center">
-      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[70px]  pt-16 sm:pt-0 sm:mt-24 md:mt-32 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
+      <div className="text-[40px] sm:text-[55px]  text-center leading-[40px] sm:leading-[70px]  pt-16 sm:pt-0 sm:mt-48 mb-3 sm:mb-16 md:mb-20 w-[90vw] xl:w-[75vw] flex flex-col md:flex-row items-center gap-y-10 md:gap-x-10">
         {/* Text Section */}
         <div className="flex flex-col w-full md:w-[50%]">
           <p className="sm:text-left text-[20px] sm:text[30px]">
@@ -80,7 +80,7 @@ export default function Partners() {
           </h5>
 
           {/* First Row */}
-          <div className="w-full flex flex-wrap gap-6 sm:gap-8 mt-10 sm:mt-14">
+          <div className="w-full flex flex-wrap sm:flex-nowrap gap-6 sm:gap-8 mt-10 sm:mt-14">
             <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_1}
@@ -112,7 +112,7 @@ export default function Partners() {
           </div>
 
           {/* Second Row */}
-          <div className="w-full flex flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
+          <div className="w-full flex sm:flex-nowrap flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
             <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_3}
@@ -145,7 +145,7 @@ export default function Partners() {
           </div>
 
           {/* Third Row */}
-          <div className="w-full flex flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
+          <div className="w-full flex sm:flex-nowrap flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
             <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_5}

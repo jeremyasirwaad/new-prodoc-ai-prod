@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function PatientJourney() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:h-[204px] p-2">
+      <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:mt-64 sm:h-[204px] p-2">
         <h1 className="font-[400] sm:tracking-[1px]">
           Transform & Innovate{" "}
           <span className="text-primary text-[30px] sm:text-[50px] font-[400] sm:tracking-[1px]">

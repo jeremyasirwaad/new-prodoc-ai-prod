@@ -6,7 +6,7 @@ import Image from "next/image";
 import { SimpleButton } from "../Buttons/SimpleButton";
 import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp, IoMdClose } from "react-icons/io";
 import logo_large from "../../assets/logo_large.png";
 import { Dropdown } from "antd";
 
@@ -34,9 +34,9 @@ export const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-      <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10 justify-between">
+      <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10">
         {/* Logo */}
-        <Link href="/" className="cursor-pointer" onClick={closeDropdownMob}>
+        <Link href="/" className="absolute left-10 cursor-pointer" onClick={closeDropdownMob}>
           <Image
             src={logo_large}
             alt="logo"
@@ -217,7 +217,7 @@ export const Navbar = () => {
         {/* Get in Touch Button */}
         <Link
           href="/book-a-demo"
-          className="hidden sm:block text-sm font-semibold"
+          className="hidden sm:block text-sm font-semibold absolute right-10"
         >
           <SimpleButton text={"Get in touch"} />
         </Link>
@@ -402,6 +402,19 @@ export const Navbar = () => {
           </Link>
         </div>
       )}
+      <div className="w-full bg-[#aed4ff] z-40 fixed top-[88px] hidden h-[70px] sm:flex justify-center items-center">
+        <span className="text-sm">
+          <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
+            NEW YEAR OFFER
+          </button>
+          <span className="text-sm">
+            Start your journey today with 20% off your first month!
+          </span>
+        </span>
+        <div className="absolute right-10">
+          <IoMdClose size={24} />
+        </div>
+      </div>
     </div>
   );
 };
