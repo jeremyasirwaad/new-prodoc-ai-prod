@@ -13,6 +13,7 @@ import { Dropdown } from "antd";
 export const Navbar = () => {
   const [isHamburgerClicked, setIsHamburgerClicked] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [offermenu, setoffermenu] = useState(true);
 
   const toggleMenu = () => {
     setIsHamburgerClicked((prevState) => !prevState);
@@ -34,7 +35,7 @@ export const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-      <div className="h-[88px] z-50 bg-[#f9f8f5]  fixed w-full flex items-center px-4 sm:px-10">
+      <div className="h-[88px] z-50 bg-white  fixed w-full flex items-center px-4 sm:px-10">
         {/* Logo */}
         <Link
           href="/"
@@ -245,7 +246,7 @@ export const Navbar = () => {
       </div>
       {/* Mobile Dropdown Menu */}
       {isHamburgerClicked && (
-        <div className="bg-[#f9f8f5] z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
+        <div className="bg-white z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
           {/* Features */}
           <div className="w-[85vw] cursor-pointer">
             <div
@@ -406,19 +407,28 @@ export const Navbar = () => {
           </Link>
         </div>
       )}
-      <div className="w-full bg-[#aed4ff] z-40 flex-col  hidden  sm:flex justify-center items-center">
-        <div className="h-[88px] w-full"></div>
-        <div className="py-4">
-          <span className="text-sm">
-            <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
-              NEW YEAR OFFER
-            </button>
+      {offermenu && (
+        <div className="w-full bg-[#aed4ff] z-40 flex-col  hidden  sm:flex justify-center items-center">
+          <div className="h-[88px] w-full"></div>
+          <div className="py-4 relative w-full flex items-center justify-center">
             <span className="text-sm">
-              Start your journey today with 20% off your first month!
+              <IoMdClose
+                size={30}
+                className="absolute right-5 top-5 cursor-pointer"
+                onClick={() => {
+                  setoffermenu(false);
+                }}
+              />
+              <button className="bg-[#1771d2a0] p-2 px-4  text-white font-semibold rounded-xl mr-4">
+                NEW YEAR OFFER
+              </button>
+              <span className="text-sm">
+                Start your journey today with 20% off your first month!
+              </span>
             </span>
-          </span>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

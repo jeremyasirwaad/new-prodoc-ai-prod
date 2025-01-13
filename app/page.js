@@ -62,7 +62,7 @@ export default function LandingPage() {
       <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-16 sm:mt-32 mb-12 sm:mb-16">
         <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
       </div>
-      <div className="bg-white w-[100vw] py-16 flex flex-col items-center justify-center">
+      <div className="bg-[#e9f4ff] w-[100vw] py-16 flex flex-col items-center justify-center">
         <Marquee>
           {slider_logo.map((logo) => {
             return (
@@ -269,7 +269,7 @@ export default function LandingPage() {
         </div>
         {/* </div> */}
       </div>
-      <div className="flex mt-14 items-center justify-center w-[100vw] bg-white px-4 sm:px-0">
+      <div className="flex mt-14 items-center justify-center w-[100vw] bg-[#e9f4ff] px-4 sm:px-0">
         <div className="text-[24px] text-center mb-12 gap-8 w-[95vw] flex flex-col sm:leading-[68px] sm:flex-row items-center sm:mt-20 sm:justify-between sm:text-left sm:mb-20 sm:text-[50px] sm:gap-x-10 xl:w-[75vw]">
           <div className="flex flex-col mt-8 w-full sm:w-[50%]">
             <h5 className="text-[24px] sm:text-[50px] leading-[1.4] sm:leading-[1.2]">
@@ -359,7 +359,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center w-[100vw] bg-white">
+      <div className="flex items-center justify-center w-[100vw] bg-[#e9f4ff]">
         <div className="text-[30px] sm:text-[50px] text-center sm:text-left leading-[40px] sm:leading-[68px] mt-10 sm:mt-20 mb-10 sm:mb-20 w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row items-center sm:justify-between gap-12 sm:gap-x-10">
           <div className="flex flex-col w-full sm:w-[50%] ">
             <h5 className="text-[30px] text-center sm:text-left sm:text-[50px]">
@@ -383,7 +383,7 @@ export default function LandingPage() {
             <Marquee speed={40} direction="left">
               {firstMarqueePluginLogos.map((logo) => (
                 <Image
-                  className="mr-6 sm:mr-12 object-contain rounded-2xl bg-white"
+                  className="mr-6 sm:mr-12 object-contain rounded-2xl bg-[#e9f4ff]"
                   src={logo.src}
                   alt={logo.name}
                   key={logo.name}
@@ -395,7 +395,7 @@ export default function LandingPage() {
             <Marquee speed={40} direction="right" className="mt-6 sm:mt-10">
               {secondMarqueePluginLogos.map((logo) => (
                 <Image
-                  className="mr-8 sm:mr-14 object-contain rounded-2xl bg-white"
+                  className="mr-8 sm:mr-14 object-contain rounded-2xl bg-[#e9f4ff]"
                   src={logo.src}
                   alt={logo.name}
                   key={logo.name}
@@ -418,7 +418,7 @@ export default function LandingPage() {
           </h5>
 
           <div className="flex flex-col sm:flex-row w-full gap-6 sm:gap-8 mt-10 sm:mt-14">
-            <div className="w-full  flex flex-col bg-white p-6 sm:w-1/2 sm:p-10 rounded-xl relative">
+            <div className="w-full  flex flex-col bg-white  shadow-lg p-6 sm:w-1/2 sm:p-10 rounded-xl relative">
               <Image
                 src={landing_testimonial_4}
                 alt="landing_testimonial"
@@ -435,7 +435,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative">
+            <div className="w-full sm:w-1/2 flex flex-col  shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
               <Image
                 src={landing_testimonial_1}
                 alt="landing_testimonial"
@@ -456,7 +456,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex flex-col sm:flex-row w-full gap-6 sm:gap-8 mt-8 sm:mt-10">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative">
+            <div className="w-full sm:w-1/2 flex flex-col  shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
               <Image
                 src={landing_testimonial_3}
                 alt="landing_testimonial"
@@ -473,7 +473,7 @@ export default function LandingPage() {
               </p>
             </div>
 
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative">
+            <div className="w-full sm:w-1/2 flex flex-col shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
               <Image
                 src={landing_testimonial_2}
                 alt="landing_testimonial"

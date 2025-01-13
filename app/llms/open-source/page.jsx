@@ -102,7 +102,7 @@ export default function LLMOpenSource() {
                 classification:
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="bg-[#e9f4ff] p-4 rounded-lg shadow-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                     <span className="font-medium">True</span>
@@ -111,7 +111,7 @@ export default function LLMOpenSource() {
                     Conversation has reached its natural conclusion
                   </p>
                 </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
+                <div className="bg-[#e9f4ff] p-4 rounded-lg shadow-sm">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 rounded-full bg-blue-500"></div>
                     <span className="font-medium">False</span>

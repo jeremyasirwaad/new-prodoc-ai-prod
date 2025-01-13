@@ -192,7 +192,7 @@ export default function Insurance() {
         </div>
       </div>
 
-      <div className="w-full bg-white relative flex items-center justify-center">
+      <div className="w-full bg-[#e9f4ff] relative flex items-center justify-center">
         <div className="mt-20 mb-8">
           <div className="">
             <h3 className="text-3xl text-black text-center">

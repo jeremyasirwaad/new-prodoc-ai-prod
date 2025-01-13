@@ -67,7 +67,7 @@ export default function ForHospital() {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center bg-white">
+      <div className="w-full flex items-center justify-center bg-[#e9f4ff]">
         <div className="w-[90vw] xl:w-[75vw]  mb-24 flex flex-col items-center justify-center ">
           <div className="flex sm:flex-row flex-col gap-10 mt-14 sm:w-full justify-center items-center">
             <div className="sm:w-1/4 flex flex-col items-center justify-center">
@@ -236,7 +236,7 @@ export default function ForHospital() {
           </div>
         </div>
       </div> */}
-      <div className="w-full flex items-center justify-center bg-white ">
+      <div className="w-full flex items-center justify-center bg-[#e9f4ff] ">
         <div className="w-[90vw] xl:w-[75vw] mt-20 mb-10 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
           {/* Text Section */}
           <div className="flex items-start flex-col justify-start w-full lg:w-1/2">

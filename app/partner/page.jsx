@@ -81,7 +81,7 @@ export default function Partners() {
 
           {/* First Row */}
           <div className="w-full flex flex-wrap sm:flex-nowrap gap-6 sm:gap-8 mt-10 sm:mt-14">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_1}
                 alt="landing_testimonial"
@@ -95,7 +95,7 @@ export default function Partners() {
                 and your clients' businesses.
               </p>
             </div>
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_2}
                 alt="landing_testimonial"
@@ -113,7 +113,7 @@ export default function Partners() {
 
           {/* Second Row */}
           <div className="w-full flex sm:flex-nowrap flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_3}
                 alt="landing_testimonial"
@@ -128,7 +128,7 @@ export default function Partners() {
                 training, and priority support.
               </p>
             </div>
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_4}
                 alt="landing_testimonial"
@@ -146,7 +146,7 @@ export default function Partners() {
 
           {/* Third Row */}
           <div className="w-full flex sm:flex-nowrap flex-wrap gap-6 sm:gap-8 mt-8 sm:mt-10">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_5}
                 alt="landing_testimonial"
@@ -161,7 +161,7 @@ export default function Partners() {
                 you promote Prodoc effectively.
               </p>
             </div>
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col bg-[#e9f4ff] p-6 sm:p-10 rounded-xl relative shadow-md">
               <Image
                 src={partner_fact_6}
                 alt="landing_testimonial"
@@ -179,7 +179,7 @@ export default function Partners() {
         </div>
       </div>
 
-      <div className="w-full flex items-center justify-center bg-white px-4 sm:px-0">
+      <div className="w-full flex items-center justify-center bg-[#e9f4ff] px-4 sm:px-0">
         <div className="w-[90vw] xl:w-[75vw] mt-10 sm:mt-20 mb-16 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
           {/* Text Section */}
           <div className="flex flex-col items-start justify-start w-full lg:w-1/2">

@@ -4,9 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #f9f8f5;
+} */
+
+
+:root {
+  --background: #ffffff;
 }
+
+/* :root {
+  --background: #e9f4ff;
+} */
+
+/* #1772d2 */
 
 * {
   font-family: "Inter", serif;

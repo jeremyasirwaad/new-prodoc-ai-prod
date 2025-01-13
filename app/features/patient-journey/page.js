@@ -39,14 +39,14 @@ export default function PatientJourney() {
           src={patient_journey_hero}
         />
       </div>
-      {/* <div className="w-full flex items-center justify-center bg-white">
+      {/* <div className="w-full flex items-center justify-center bg-[#e9f4ff]">
         <div className="mt-20 mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
           <h5 className="text-[40px]">
             Discover how Prodoc AI <br></br> enhances
             <span className="text-primary text-[40px]"> patient care</span>{" "}
           </h5>
           <div className="w-full flex gap-8 mt-14">
-            <div className="w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-1/2 flex flex-col bg-[#e9f4ff] p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact1}
                 alt="landing_testimonial"
@@ -62,7 +62,7 @@ export default function PatientJourney() {
                 process.
               </p>
             </div>
-            <div className="w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-1/2 flex flex-col bg-[#e9f4ff] p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact2}
                 alt="landing_testimonial"
@@ -77,7 +77,7 @@ export default function PatientJourney() {
             </div>
           </div>
           <div className="w-full flex gap-8 mt-10">
-            <div className="w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-1/2 flex flex-col bg-[#e9f4ff] p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact3}
                 alt="landing_testimonial"
@@ -92,7 +92,7 @@ export default function PatientJourney() {
                 supplements, or mental health resources.
               </p>
             </div>
-            <div className="w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-1/2 flex flex-col bg-[#e9f4ff] p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact4}
                 alt="landing_testimonial"
@@ -120,7 +120,7 @@ export default function PatientJourney() {
             </span>
           </h5>
           <div className="w-full flex flex-col sm:flex-row gap-8 mt-6 sm:mt-14">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col  p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact1}
                 alt="landing_testimonial"
@@ -136,7 +136,7 @@ export default function PatientJourney() {
                 process.
               </p>
             </div>
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col  p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact2}
                 alt="landing_testimonial"
@@ -153,7 +153,7 @@ export default function PatientJourney() {
             </div>
           </div>
           <div className="w-full flex flex-col sm:flex-row gap-8 mt-10">
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col  p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact3}
                 alt="landing_testimonial"
@@ -168,7 +168,7 @@ export default function PatientJourney() {
                 supplements, or mental health resources.
               </p>
             </div>
-            <div className="w-full sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
+            <div className="w-full sm:w-1/2 flex flex-col  p-10 rounded-xl relative shadow-md">
               <Image
                 src={patient_journey_fact4}
                 alt="landing_testimonial"
@@ -250,7 +250,7 @@ export default function PatientJourney() {
         </div>
       </div>
 
-      <div className="w-full bg-white relative flex items-center justify-center">
+      <div className="w-full bg-[#e9f4ff] relative flex items-center justify-center">
         <div className="mt-10 mb-10 sm:mt-20 sm:mb-20">
           <div className="">
             <h3 className="text-2xl text-black text-center">
