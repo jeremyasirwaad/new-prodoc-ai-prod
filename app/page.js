@@ -279,6 +279,70 @@ export default function LandingPage() {
           height={200}
         />
       </div>
+      <div className="flex mt-5 items-center justify-center w-[100vw]  px-4 sm:px-0">
+        <div className="text-[24px] text-center mb-12 gap-8 w-[95vw] flex flex-col sm:leading-[68px] sm:flex-row items-center sm:mt-20 sm:justify-between sm:text-left sm:mb-20 sm:text-[50px] sm:gap-x-10 xl:w-[75vw]">
+          <div className="flex flex-col mt-8 w-full sm:w-[50%]">
+            <h5 className="text-[24px] sm:text-[50px] leading-[1.4] sm:leading-[1.2]">
+              Human-Like Interactions with{" "}
+              <span className="text-primary text-[24px] sm:text-[50px]">
+                Unified Communication
+              </span>
+            </h5>
+
+            <h3 className="text-sm mt-6 text-left sm:text-lg leading-relaxed">
+              <span className="mb-2 text-primary block sm:inline">
+                WhatsApp and Message Integration
+              </span>
+              <span className="sm:ml-2">
+                Enable patient communication through WhatsApp, providing secure
+                and convenient interactions.
+              </span>
+            </h3>
+            <h3 className="text-sm  mt-6 text-left sm:text-lg leading-relaxed">
+              <span className="mb-2 text-primary block sm:inline">
+                Intelligent Web Chatbots
+              </span>
+              <span className="sm:ml-2">
+                AI chatbots that handle inquiries, schedule appointments, and
+                provide instant responses 24/7.
+              </span>
+            </h3>
+            <h3 className="text-sm mt-6 text-left sm:text-lg leading-relaxed">
+              <span className="mb-2 text-primary block sm:inline">
+                Voice Agent Solutions
+              </span>
+              <span className="sm:ml-2">
+                Smart voice agents for automated phone interactions, handling
+                appointments and patient support.
+              </span>
+            </h3>
+          </div>
+          <div className="w-full sm:w-[50%] p-4 sm:p-10">
+            <Image
+              src={landing_section_3}
+              alt="alt"
+              className="rounded-3xl mx-auto sm:mx-0"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col bg-[#e9f4ff]   justify-center gap-20 h-[200px]  items-center w-full sm:flex-row ">
+        <div className="  text-center">
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">1M+</p>
+          <p className="text-lg sm:text-xl">Patients Engaged</p>
+        </div>
+
+        <div className="  text-center">
+          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">10K+</p>
+          <p className="text-lg sm:text-xl">Daily Interactions</p>
+        </div>
+
+        <div className="  text-center">
+          <p className="text-[40px] sm:text-[65px] mt-10  sm:mt-6">100+</p>
+          <p className="text-lg sm:text-xl">Healthcare Providers</p>
+        </div>
+        {/* </div> */}
+      </div>
       <div className="sm:w-full flex flex-col items-center justify-center">
         <div className="w-full sm:w-[90vw] xl:w-[75vw] mb-12 sm:mb-24 flex flex-col items-center justify-center">
           <div className="flex flex-col sm:flex-row gap-10 mt-8 sm:mt-28 items-center justify-center">
@@ -353,70 +417,7 @@ export default function LandingPage() {
         </div>
       </div>
       <Divider />
-      <div className="flex flex-col   justify-between  items-center w-[65vw] sm:flex-row ">
-        <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">1M+</p>
-          <p className="text-lg sm:text-xl">Patients Engaged</p>
-        </div>
 
-        <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">10K+</p>
-          <p className="text-lg sm:text-xl">Daily Interactions</p>
-        </div>
-
-        <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10  sm:mt-6">100+</p>
-          <p className="text-lg sm:text-xl">Healthcare Providers</p>
-        </div>
-        {/* </div> */}
-      </div>
-      <div className="flex mt-14 items-center justify-center w-[100vw] bg-[#e9f4ff] px-4 sm:px-0">
-        <div className="text-[24px] text-center mb-12 gap-8 w-[95vw] flex flex-col sm:leading-[68px] sm:flex-row items-center sm:mt-20 sm:justify-between sm:text-left sm:mb-20 sm:text-[50px] sm:gap-x-10 xl:w-[75vw]">
-          <div className="flex flex-col mt-8 w-full sm:w-[50%]">
-            <h5 className="text-[24px] sm:text-[50px] leading-[1.4] sm:leading-[1.2]">
-              Human-Like Interactions with{" "}
-              <span className="text-primary text-[24px] sm:text-[50px]">
-                Unified Communication
-              </span>
-            </h5>
-
-            <h3 className="text-sm mt-6 text-left sm:text-lg leading-relaxed">
-              <span className="mb-2 text-primary block sm:inline">
-                WhatsApp and Message Integration
-              </span>
-              <span className="sm:ml-2">
-                Enable patient communication through WhatsApp, providing secure
-                and convenient interactions.
-              </span>
-            </h3>
-            <h3 className="text-sm  mt-6 text-left sm:text-lg leading-relaxed">
-              <span className="mb-2 text-primary block sm:inline">
-                Intelligent Web Chatbots
-              </span>
-              <span className="sm:ml-2">
-                AI chatbots that handle inquiries, schedule appointments, and
-                provide instant responses 24/7.
-              </span>
-            </h3>
-            <h3 className="text-sm mt-6 text-left sm:text-lg leading-relaxed">
-              <span className="mb-2 text-primary block sm:inline">
-                Voice Agent Solutions
-              </span>
-              <span className="sm:ml-2">
-                Smart voice agents for automated phone interactions, handling
-                appointments and patient support.
-              </span>
-            </h3>
-          </div>
-          <div className="w-full sm:w-[50%] p-4 sm:p-10">
-            <Image
-              src={landing_section_3}
-              alt="alt"
-              className="rounded-3xl mx-auto sm:mx-0"
-            />
-          </div>
-        </div>
-      </div>
       <div className="w-full flex items-center justify-center">
         <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-12 sm:mt-20 mb-12 sm:mb-20">
           <h5 className="text-[30px] sm:text-[50px] text-center sm:text-left">

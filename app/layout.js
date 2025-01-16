@@ -1,8 +1,8 @@
 // app/layout.jsx
-import Link from 'next/link';
-import './globals.css'; // Include your global styles
-import { Navbar } from '@/components/Navbar/Navbar';
-import { Footer } from '@/components/Footer/Footer';
+import "./globals.css"; // Include your global styles
+import { Navbar } from "@/components/Navbar/Navbar";
+
+import { Footer } from "@/components/Footer/Footer";
 
 export default function Layout({ children }) {
   return (
