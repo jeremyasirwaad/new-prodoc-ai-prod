@@ -4,6 +4,10 @@ import landing_hero from "../assets/landing_hero.jpg";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
+import { IoMdArrowForward } from "react-icons/io";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 import { FaCircleCheck } from "react-icons/fa6";
@@ -29,17 +33,39 @@ import { plugin_logos } from "@/assets/logos";
 import { Divider, Input, Form, Button } from "antd";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const firstMarqueePluginLogos = plugin_logos.slice(0, 6);
 const secondMarqueePluginLogos = plugin_logos.slice(6);
 
 export default function LandingPage() {
   const [form] = Form.useForm();
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [firstVisibility, setFirstVisibility] = useState(true);
   const [secondVisibility, setSecondVisibility] = useState(false);
   const [thirdVisibility, setThirdVisibility] = useState(false);
   const [fourVisibility, setFourVisibility] = useState(false);
+
+  const [transformValue, setTransformValue] = useState(currentIndex * 85);
+
+  useEffect(() => {
+    const updateTransform = () => {
+      if (window.matchMedia("(max-width: 640px)").matches) {
+        setTransformValue(currentIndex * 110); // For small screens
+      } else if (window.matchMedia("(min-width: 1024px)").matches) {
+        setTransformValue(currentIndex * 85); // For large screens
+      } else {
+        setTransformValue(currentIndex * 70); // For medium screens
+      }
+    };
+
+    updateTransform(); // Set initial value
+    window.addEventListener("resize", updateTransform); // Listen for resize
+
+    return () => {
+      window.removeEventListener("resize", updateTransform); // Cleanup
+    };
+  }, [currentIndex]);
 
   const resetFields = () => {
     setFirstVisibility(false);
@@ -48,9 +74,66 @@ export default function LandingPage() {
     setFourVisibility(false);
   };
 
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handlePrev = () => {
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+        );
+        setIsTransitioning(false);
+      }, 300); // Match with the CSS transition duration
+    }
+  };
+
+  const handleNext = () => {
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+        );
+        setIsTransitioning(false);
+      }, 300); // Match with the CSS transition duration
+    }
+  };
+
+  const testimonials = [
+    {
+      id: 1,
+      image: landing_testimonial_4, // Replace with actual image path
+      name: "Dr. Rohit Sane",
+      position: "CEO, Madhavbaug",
+      text: "Prodoc AI enhances our ability to interact, understand patient needs, and connect them to the best care at the nearest Madhavbaug clinic.",
+    },
+    {
+      id: 2,
+      image: landing_testimonial_1, // Replace with actual image path
+      name: "Dr. K.K Subbaiah",
+      position: "CEO, Orthopedic surgeon, BOSH Hospital",
+      text: "Prodoc AI has transformed our WhatsApp engagement strategy, moving beyond just appointment booking to driving lead generation, and better patient retention.",
+    },
+    {
+      id: 3,
+      image: landing_testimonial_3, // Replace with actual image path
+      name: "Dr Shilpa Vikas",
+      position: "Director & CEO - Provitale Health",
+      text: "Highly recommend Prodoc AI for streamlining lead distribution, automating bookings, and boosting patient conversion and retention across our clinics.",
+    },
+    {
+      id: 4,
+      image: landing_testimonial_2, // Replace with actual image path
+      name: "Col. Rakesh Bhardwaj",
+      position: "Group COO United Hospital",
+      text: "Prodoc AI helps us reach new and existing patients, follow up automatically, and engage with them in their own language.",
+    },
+  ];
+
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
-      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[75px] mt-32 sm:h-[200px]">
+      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[75px] mt-40 sm:h-[200px]">
         <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[65px] ">
           Enhance{" "}
           <span className="text-primary text-[28px] sm:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
@@ -509,87 +592,87 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="w-full mt-8 flex items-center justify-center">
-        <div className=" mb-8 w-[90vw] sm:mb-5 sm:mt-10 xl:w-[75vw] rounded-2xl">
-          <h5 className="text-[30px] text-center  leading-[30px]  sm:text-[50px] sm:text-left  sm:leading-[60px]">
+      <div className="w-full mt-10 flex items-center justify-center">
+        <div className=" mb-8 w-full sm:mb-5 sm:mt-10  rounded-2xl">
+          <h5 className="text-[30px] text-center  sm:pl-[50px] leading-[30px]  sm:text-[50px] sm:text-left  sm:leading-[60px]">
             Trusted by{" "}
             <span className="text-primary text-[30px]  sm:leading-[60px] sm:text-[50px]">
               customers
             </span>
-            <br /> loved by many
+            <br />
+            loved by many
           </h5>
 
-          <div className="flex flex-col sm:flex-row w-full gap-6 sm:gap-8 mt-10 sm:mt-14">
-            <div className="w-full  flex flex-col bg-white  shadow-lg p-6 sm:w-1/2 sm:p-10 rounded-xl relative">
-              <Image
-                src={landing_testimonial_4}
-                alt="landing_testimonial"
-                className="rounded-full grayscale absolute right-5  top-5 h-[80px] w-[80px] sm:h-[100px] sm:right-10  sm:w-[100px]"
-              />
-              <span className="text-lg mt-14 sm:text-xl  sm:mt-12">
-                Dr. Rohit Sane
-              </span>
-              <span className="text-sm">CEO, Madhavbaug</span>
-              <p className="mt-4 text-sm sm:text-base">
-                Prodoc AI enhances our ability to interact, understand patient
-                needs, and connect them to the best care at the nearest
-                Madhavbaug clinic.
-              </p>
+          <div className="flex items-center justify-center   mt-20 mb-5  w-full">
+            {/* Carousel Wrapper */}
+            <div className=" text-center  flex items-center justify-center mr-4">
+              {/* Left Arrow */}
+              <button
+                onClick={handlePrev}
+                className=" text-3xl sm:text-4xl  text-gray-700 hover:text-gray-900 z-10"
+              >
+                <FaArrowLeft
+                  className=" text-blue-500 border-[0.15rem] p-1 border-blue-500 rounded-full"
+                  size={30}
+                />
+              </button>
+            </div>
+            <div className="flex items-center justify-center w-full  sm:max-w-6xl overflow-hidden">
+              {/* Testimonial Content */}
+              <div
+                className={`flex gap-8 sm:max-w-5xl  w-full  sm:p-4 transform transition-transform duration-300 ease-in-out`}
+                style={{
+                  transform: `translateX(-${transformValue}%)`,
+                }}
+              >
+                {testimonials.map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className="sm:min-w-[90%] min-w-full relative  shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl  sm:h-[400px]"
+                  >
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="rounded-full grayscale m-2 sm:absolute sm:right-5 sm:top-5  h-[80px] w-[80px] sm:right-15 sm:h-[200px] sm:w-[200px]"
+                    />
+                    <span className="text-lg   sm:text-5xl font-bold sm:mt-12">
+                      {testimonial.name}
+                    </span>
+                    <span className="text-xl lg:p-2  text-gray-600">
+                      {testimonial.position}
+                    </span>
+                    <p className="mt-4 sm:max-w-[60%] text-sm sm:text-lg text-gray-700">
+                      {testimonial.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Right Arrow */}
+            </div>
+            <div className="ml-4 p-3  rounded-[50%]">
+              <button onClick={handleNext} className="  text-3xl sm:text-4xl ">
+                <FaArrowRight
+                  className=" text-blue-500 border-[0.15rem] p-1 border-blue-500 rounded-full"
+                  size={30}
+                />
+              </button>
             </div>
 
-            <div className="w-full sm:w-1/2 flex flex-col  shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
-              <Image
-                src={landing_testimonial_1}
-                alt="landing_testimonial"
-                className="rounded-full grayscale absolute right-5 sm:right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
-              />
-              <span className="text-lg mt-14 sm:text-xl  sm:mt-12">
-                Dr. K.K Subbaiah
-              </span>
-              <span className="text-sm">
-                CEO, Orthopedic surgeon, BOSH Hospital
-              </span>
-              <p className="mt-4 text-sm sm:text-base">
-                Prodoc AI has transformed our WhatsApp engagement strategy,
-                moving beyond just appointment booking to driving lead
-                generation, and better patient retention.
-              </p>
-            </div>
+            {/* Dots Navigation */}
           </div>
-
-          <div className="flex flex-col sm:flex-row w-full gap-6 sm:gap-8 mt-8 sm:mt-10">
-            <div className="w-full sm:w-1/2 flex flex-col  shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
-              <Image
-                src={landing_testimonial_3}
-                alt="landing_testimonial"
-                className="rounded-full grayscale absolute right-5 sm:right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
-              />
-              <span className="text-lg mt-14 sm:text-xl sm:mt-12">
-                Dr Shilpa Vikas
-              </span>
-              <span className="text-sm">Director & CEO - Provitale Health</span>
-              <p className="mt-4 text-sm sm:text-base">
-                Highly recommend Prodoc AI for streamlining lead distribution,
-                automating bookings, and boosting patient conversion and
-                retention across our clinics.
-              </p>
-            </div>
-
-            <div className="w-full sm:w-1/2 flex flex-col shadow-lg bg-white p-6 sm:p-10 rounded-xl relative">
-              <Image
-                src={landing_testimonial_2}
-                alt="landing_testimonial"
-                className="rounded-full grayscale absolute right-5 sm:right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
-              />
-              <span className="text-lg mt-14 sm:text-xl sm:mt-12">
-                Col. Rakesh Bhardwaj
-              </span>
-              <span className="text-sm">Group COO United Hospital</span>
-              <p className="mt-4 text-sm sm:text-base">
-                Prodoc AI helps us reach new and existing patients, follow up
-                automatically, and engage with them in their own language.
-              </p>
-            </div>
+          <div className="flex justify-center">
+            {testimonials.map((_, index) => (
+              <div
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 mx-1 rounded-full cursor-pointer ${
+                  index === currentIndex
+                    ? "bg-gray-700"
+                    : "bg-gray-300 hover:bg-gray-400"
+                }`}
+              ></div>
+            ))}
           </div>
         </div>
       </div>

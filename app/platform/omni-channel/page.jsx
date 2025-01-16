@@ -87,23 +87,22 @@ export default function PatientConnect() {
             <p className="mt-5">
               <span className="font-bold text-sm">Voice Agents:</span>{" "}
               <span className="text-sm">
-                Utilize automated campaigns and chatbots to efficiently connect
-                with diverse patient populations.
+                Automate campaigns and use chatbots to efficiently reach diverse
+                patient groups.
               </span>
               <br></br>
               <span className="font-bold text-sm">Chat Agents:</span>{" "}
               <span className="text-sm">
-                Engage with patients across chatbots, WhatsApp, and social
-                platforms, providing instant responses to questions and guiding
-                them through their care journey.
+                Engage patients via chatbots, WhatsApp, and social platforms
+                with instant responses and care guidance.
               </span>
               <br></br>
               <span className="font-bold text-sm">
                 Personalized Interaction:
               </span>{" "}
               <span className="text-sm">
-                AI agents adapt to individual patient needs, leveraging memory
-                and context for meaningful conversations.
+                AI agents tailor conversations to individual patient needs using
+                memory and context.
               </span>
               <br></br>
             </p>
@@ -154,24 +153,23 @@ export default function PatientConnect() {
             <p className="mt-5">
               <span className="font-bold text-sm">Actionable Insights:</span>{" "}
               <span className="text-sm">
-                Analyze patient interactions to identify trends, gaps, and
-                opportunities for improvement.
+                Analyze interactions to uncover trends, gaps, and improvement
+                opportunities.
               </span>
               <br></br>
               <span className="font-bold text-sm">
                 Performance Metrics:
               </span>{" "}
               <span className="text-sm">
-                Measure key communication metrics, such as resolution time and
-                patient satisfaction, to optimize workflows.
+                Track metrics like resolution time and satisfaction to refine
+                workflows.
               </span>
               <br></br>
               <span className="font-bold text-sm">
                 Sentiment Analysis:
               </span>{" "}
               <span className="text-sm">
-                Understand patient emotions in conversations to enhance
-                engagement and care delivery.
+                Gauge patient emotions to improve engagement and care delivery
               </span>
               <br></br>
             </p>
@@ -188,25 +186,22 @@ export default function PatientConnect() {
             <p className="mt-5">
               <span className="font-bold text-sm">Workflow Automation:</span>{" "}
               <span className="text-sm">
-                Create rules to automate repetitive processes, such as sending
-                reminders, escalating urgent queries, or following up with
-                patients.
+                Automate tasks like reminders, query escalation, and patient
+                follow-ups.
               </span>
               <br></br>
               <span className="font-bold text-sm">
                 Customizable Triggers:
               </span>{" "}
               <span className="text-sm">
-                Set triggers based on patient actions or conditions to
-                streamline operations.
+                Use patient actions or conditions to streamline processes.
               </span>
               <br></br>
               <span className="font-bold text-sm">
                 Consistency and Compliance:
               </span>{" "}
               <span className="text-sm">
-                Ensure standardized communication that adheres to healthcare
-                regulations.
+                Maintain standardized, regulation-compliant communication.
               </span>
               <br></br>
             </p>
