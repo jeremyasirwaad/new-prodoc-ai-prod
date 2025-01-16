@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex items-center flex-col pb-20 justify-center bg-white px-4 sm:px-0">
+    <div className="w-full flex items-center flex-col pb-20 justify-center bg-white  sm:px-0">
       <div className="w-full flex items-center flex-col justify-center">
         <div className="bg-blue-100 w-full flex flex-col items-center justify-center">
           {/* Divider Section */}

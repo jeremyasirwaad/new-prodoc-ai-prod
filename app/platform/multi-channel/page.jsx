@@ -238,7 +238,7 @@ export default function PatientConnect() {
       </div>
 
       <div className="w-full flex items-center justify-center">
-        <div className="mt-10 mb-10 w-[90vw] xl:w-[75vw] rounded-2xl">
+        <div className=" mb-20 w-[90vw] xl:w-[75vw] rounded-2xl">
           {/* Heading */}
           <h5 className="text-[28px] sm:text-[36px] lg:text-[40px] text-center">
             How<br className="sm:hidden"></br> <br className="sm:hidden" />

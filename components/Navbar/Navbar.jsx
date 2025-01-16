@@ -346,7 +346,7 @@ export const Navbar = () => {
             {activeDropdown === "platform" && (
               <div className="p-4 flex flex-col gap-4">
                 <Link
-                  href="/features/patient-connect"
+                  href="/platform/care-engine"
                   onClick={closeDropdownMob}
                   className="cursor-pointer"
                 >
