@@ -593,8 +593,8 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="w-full mt-10 flex items-center justify-center">
-        <div className=" mb-8 w-full sm:mb-5 sm:mt-10  rounded-2xl">
-          <h5 className="text-[30px] text-center  sm:pl-[50px] leading-[30px]  sm:text-[50px] sm:text-left  sm:leading-[60px]">
+        <div className=" mb-8 w-full sm:mb-5 sm:mt-10  flex flex-col items-center  rounded-2xl">
+          <h5 className="text-[30px]   w-[75%] text-center  leading-[30px]  sm:text-[50px] sm:text-left  sm:leading-[60px]">
             Trusted by{" "}
             <span className="text-primary text-[30px]  sm:leading-[60px] sm:text-[50px]">
               customers
@@ -628,20 +628,20 @@ export default function LandingPage() {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="sm:min-w-[90%] min-w-full relative  shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl  sm:h-[400px]"
+                    className="sm:min-w-[90%] min-w-full relative   shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl  sm:h-[300px]"
                   >
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="rounded-full grayscale m-2 sm:absolute sm:right-5 sm:top-5  h-[80px] w-[80px] sm:right-15 sm:h-[200px] sm:w-[200px]"
+                      className="rounded-full grayscale m-2 sm:absolute sm:right-20 sm:top-24 h-[80px] w-[80px] sm:right-15 sm:h-[150px] sm:w-[150px]"
                     />
-                    <span className="text-lg   sm:text-5xl font-bold sm:mt-12">
+                    <span className="text-lg   sm:text-3xl sm:mt-12">
                       {testimonial.name}
                     </span>
-                    <span className="text-xl lg:p-2  text-gray-600">
+                    <span className="text-xl   text-gray-600">
                       {testimonial.position}
                     </span>
-                    <p className="mt-4 sm:max-w-[60%] text-sm sm:text-lg text-gray-700">
+                    <p className="mt-4 sm:max-w-[60%]  text-sm sm:text-lg text-gray-700">
                       {testimonial.text}
                     </p>
                   </div>
@@ -714,12 +714,12 @@ export default function LandingPage() {
       <div className="w-[100vw] bg-white relative flex items-center justify-center">
         <div className="mt-20 mb-20">
           <div className="">
-            <h3 className="text-[28px] sm:text-4xl text-black text-center">
+            <h3 className="text-[30px] sm:text-[50px] text-black text-center">
               Empowering 100+ healthcare facilities worldwide
               <br />
-              <span className="text-2xl font-normal mt-6 hidden sm:block">
+              <span className="text-[30px] sm:text-[50px] font-normal hidden sm:block">
                 With{" "}
-                <span className="text-primary text-2xl">
+                <span className="text-primary text-[30px] sm:text-[50px]">
                   24/7 multilingual <br className="sm:hidden"></br>{" "}
                 </span>{" "}
                 patient engagement
