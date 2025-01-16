@@ -104,6 +104,50 @@ export const Navbar = () => {
               </span>
             </Dropdown>
 
+            {/*Platform Dropdown*/}
+
+            <Dropdown
+              dropdownRender={() => (
+                <div className="bg-white flex flex-col rounded-3xl p-6 w-[300px] shadow-lg mt-4">
+                  <h3 className="font-semibold text-lg mb-2 text-primary">
+                    Platform
+                  </h3>
+                  <Link
+                    href="/platform/care-engine"
+                    onClick={closeDropdownDesktop}
+                    className="cursor-pointer p-3 rounded-lg hover:bg-blue-50"
+                  >
+                    AI Care Engine
+                  </Link>
+                  <Link
+                    href="/platform/omni-channel"
+                    onClick={closeDropdownDesktop}
+                    className="cursor-pointer p-3 rounded-lg hover:bg-blue-50"
+                  >
+                    Omnichannel CareHub
+                  </Link>
+                  <Link
+                    href="/platform/multi-channel"
+                    onClick={closeDropdownDesktop}
+                    className="cursor-pointer p-3 rounded-lg hover:bg-blue-50"
+                  >
+                    Multichannel CareConnect
+                  </Link>
+                </div>
+              )}
+              placement="bottom"
+              open={activeDropdown === "platform"}
+              onOpenChange={() =>
+                setActiveDropdown((prev) =>
+                  prev === "platform" ? null : "platform"
+                )
+              }
+            >
+              <span className="relative cursor-pointer after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-[64px] after:-translate-x-1/2">
+                Platform
+              </span>
+            </Dropdown>
+
             {/* Solutions Dropdown */}
             <Dropdown
               dropdownRender={() => (
@@ -207,15 +251,6 @@ export const Navbar = () => {
                 Resources
               </span>
             </Dropdown>
-
-            {/* Book a Demo */}
-            <Link
-              href="/book-a-demo"
-              onClick={closeDropdownDesktop}
-              className="relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-[64px] after:-translate-x-1/2"
-            >
-              Book a Demo
-            </Link>
           </div>
         )}
 
@@ -289,6 +324,47 @@ export const Navbar = () => {
                   className="cursor-pointer"
                 >
                   Patient Outreach
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Platform */}
+
+          <div className="w-[85vw] cursor-pointer">
+            <div
+              className="flex items-center justify-between"
+              onClick={() => toggleDropdownMobile("platform")}
+            >
+              <h3 className="text-lg font-semibold">Platform</h3>
+              {activeDropdown === "platform" ? (
+                <IoIosArrowUp />
+              ) : (
+                <IoIosArrowDown />
+              )}
+            </div>
+            {activeDropdown === "platform" && (
+              <div className="p-4 flex flex-col gap-4">
+                <Link
+                  href="/features/patient-connect"
+                  onClick={closeDropdownMob}
+                  className="cursor-pointer"
+                >
+                  AI Care Engine
+                </Link>
+                <Link
+                  href="/platform/omni-channel"
+                  onClick={closeDropdownMob}
+                  className="cursor-pointer"
+                >
+                  Omnichannel CareHub
+                </Link>
+                <Link
+                  href="/platform/multi-channel"
+                  onClick={closeDropdownMob}
+                  className="cursor-pointer"
+                >
+                  Multichannel CareConnect
                 </Link>
               </div>
             )}
@@ -396,15 +472,6 @@ export const Navbar = () => {
               </div>
             )}
           </div>
-
-          {/* Book a Demo */}
-          <Link
-            href="/book-a-demo"
-            onClick={closeDropdownMob}
-            className="mt-16 w-[90%] text-center bg-primary text-white py-2 px-6 rounded-lg"
-          >
-            Book a Demo
-          </Link>
         </div>
       )}
       {offermenu && (

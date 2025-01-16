@@ -10,61 +10,67 @@ export const Footer = () => {
   return (
     <div className="w-full flex items-center flex-col pb-20 justify-center bg-white px-4 sm:px-0">
       <div className="w-full flex items-center flex-col justify-center">
-        {/* Divider Section */}
-        <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
-          <Divider />
-        </div>
-
-        {/* Content Section */}
-        <div className="w-[90vw] mt-6 sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-4 lg:gap-8 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
-          {/* Features Section */}
-          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
-            <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
-            <Link href={"/features/patient-connect"} className="mt-4">
-              Patient Connect
-            </Link>
-            <Link href={"/features/smart-consult"} className="mt-2">
-              Smart Consultation
-            </Link>
-            <Link href={"/features/patient-journey"} className="mt-2">
-              Care Navigator
-            </Link>
-            <Link href={"/features/patient-outreach"} className="mt-2">
-              Patient Outreach
-            </Link>
+        <div className="bg-blue-100 w-full flex flex-col items-center justify-center">
+          {/* Divider Section */}
+          <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
+            <Divider />
           </div>
 
-          {/* Solutions Section */}
-          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
-            <h3 className="text-lg font-semibold text-[#072646]">Solutions</h3>
-            <Link href={"/solutions/hospital"} className="mt-4">
-              For Hospital
-            </Link>
-            <Link href={"/solutions/insurance"} className="mt-2">
-              For Insurance
-            </Link>
-          </div>
+          {/* Content Section */}
+          <div className="w-[90vw] mt-6 sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-4 lg:gap-8 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
+            {/* Features Section */}
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">Features</h3>
+              <Link href={"/features/patient-connect"} className="mt-4">
+                Patient Connect
+              </Link>
+              <Link href={"/features/smart-consult"} className="mt-2">
+                Smart Consultation
+              </Link>
+              <Link href={"/features/patient-journey"} className="mt-2">
+                Care Navigator
+              </Link>
+              <Link href={"/features/patient-outreach"} className="mt-2">
+                Patient Outreach
+              </Link>
+            </div>
 
-          {/* LLMs Section */}
-          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
-            <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
-            <Link href={"/llms/open-source"} className="mt-4">
-              Open Sourced LLMs
-            </Link>
-          </div>
+            {/* Solutions Section */}
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">
+                Solutions
+              </h3>
+              <Link href={"/solutions/hospital"} className="mt-4">
+                For Hospital
+              </Link>
+              <Link href={"/solutions/insurance"} className="mt-2">
+                For Insurance
+              </Link>
+            </div>
 
-          {/* Resources Section */}
-          <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
-            <h3 className="text-lg font-semibold text-[#072646]">Resources</h3>
-            <Link href={"/blogs"} className="mt-4">
-              Blogs
-            </Link>
-            <Link href={"/faq"} className="mt-2">
-              FAQs
-            </Link>
-            <Link href={"/partner"} className="mt-2">
-              Become a Partner
-            </Link>
+            {/* LLMs Section */}
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
+              <Link href={"/llms/open-source"} className="mt-4">
+                Open Sourced LLMs
+              </Link>
+            </div>
+
+            {/* Resources Section */}
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">
+                Resources
+              </h3>
+              <Link href={"/blogs"} className="mt-4">
+                Blogs
+              </Link>
+              <Link href={"/faq"} className="mt-2">
+                FAQs
+              </Link>
+              <Link href={"/partner"} className="mt-2">
+                Become a Partner
+              </Link>
+            </div>
           </div>
         </div>
 

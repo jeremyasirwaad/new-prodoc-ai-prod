@@ -3,6 +3,9 @@
 import landing_hero from "../assets/landing_hero.jpg";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { IoIosArrowDropdownCircle } from "react-icons/io";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+
 import { FaCircleCheck } from "react-icons/fa6";
 // import { plugins_logos, slider_logo } from "@/assets/logos";
 import { slider_logo } from "@/assets/logos";
@@ -26,32 +29,42 @@ import { plugin_logos } from "@/assets/logos";
 import { Divider, Input, Form, Button } from "antd";
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 
 const firstMarqueePluginLogos = plugin_logos.slice(0, 6);
 const secondMarqueePluginLogos = plugin_logos.slice(6);
 
 export default function LandingPage() {
   const [form] = Form.useForm();
+  const [firstVisibility, setFirstVisibility] = useState(true);
+  const [secondVisibility, setSecondVisibility] = useState(false);
+  const [thirdVisibility, setThirdVisibility] = useState(false);
+  const [fourVisibility, setFourVisibility] = useState(false);
+
+  const resetFields = () => {
+    setFirstVisibility(false);
+    setSecondVisibility(false);
+    setThirdVisibility(false);
+    setFourVisibility(false);
+  };
 
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
-      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[68px] mt-32 sm:h-[200px]">
-        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[50px] ">
+      <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[75px] mt-32 sm:h-[200px]">
+        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[65px] ">
           Enhance{" "}
-          <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
-            healthcare
+          <span className="text-primary text-[28px] sm:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
+            Healthcare
           </span>{" "}
-          with AI-powered
+          outcomes with
           <br />
-          <span className="text-primary text-[28px] sm:text-[50px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
-            patient engagement
+          <span className="text-primary text-[28px] sm:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
+            AI-powered
           </span>{" "}
-          solutions to
-          <br />
-          achieve better outcomes
+          Patient Engagement
         </h1>
       </div>
-      <div className="mt-10 sm:mt-12">
+      <div className="mt-8 sm:mt-1">
         <Link
           href="/book-a-demo"
           className="bg-primary text-white px-5 py-4 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
@@ -59,7 +72,7 @@ export default function LandingPage() {
           Schedule a meeting
         </Link>
       </div>
-      <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-16 sm:mt-32 mb-12 sm:mb-16">
+      <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-16 sm:mt-26 mb-12 sm:mb-16">
         <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
       </div>
       <div className="bg-[#e9f4ff] w-[100vw] py-16 flex flex-col items-center justify-center">
@@ -87,58 +100,146 @@ export default function LandingPage() {
             <h3 className="text-[30px] sm:text-[45px] xl:text-[50px] mb-6 sm:mb-10">
               What we solve
             </h3>
+
             <div className="w-full">
-              <p className="text-base mb-2 flex items-center gap-x-3  sm:text-lg">
-                <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base sm:text-lg">
+              <p
+                onClick={() => {
+                  resetFields();
+                  setFirstVisibility(!firstVisibility);
+                }}
+                className="text-base font-semibold mb-2 cursor-pointer gap-x-3 flex items-center sm:text-xl"
+              >
+                {firstVisibility ? (
+                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
+                ) : (
+                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
+                )}
+
+                {/* <FaCircleCheck /> */}
+                <span className="text-primary  text-base sm:text-xl">
                   Pre-Consultation Challenges
                 </span>
               </p>
-              <p className="text-left sm:mt-1 text-sm">
-                Patients often struggle to navigate their symptoms and find the
-                right care. Prodoc simplifies this process with AI-powered
-                guidance and symptom assessment.
-              </p>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  firstVisibility
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                {firstVisibility && (
+                  <p className="text-left sm:mt-1 text-sm sm:text-xl ml-8 sm:pb-4 sm:mb-1 w-[84%]">
+                    Patients often struggle to navigate their symptoms and find
+                    the right care. Prodoc simplifies this process with
+                    AI-powered guidance and symptom assessment.
+                  </p>
+                )}
+              </div>
             </div>
+
             <div className="w-full">
-              <p className="text-base mb-2  mt-6 flex items-center gap-x-3 sm:text-lg">
-                <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base sm:text-lg">
+              <p
+                onClick={() => {
+                  resetFields();
+                  setSecondVisibility(!secondVisibility);
+                }}
+                className="text-base mb-2 mt-0 flex cursor-pointer items-center gap-x-3 sm:text-lg"
+              >
+                {secondVisibility ? (
+                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
+                ) : (
+                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
+                )}
+                <span className="text-primary font-semibold cursor-pointer text-base sm:text-xl">
                   Inconsistent Patient Communication
                 </span>
               </p>
-              <p className="text-left sm:mt-1 text-sm">
-                Prodoc provides consistent, multilingual communication 24/7 via
-                voice, WhatsApp, and bots, reducing confusion from multiple
-                channels.
-              </p>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  secondVisibility
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                {secondVisibility && (
+                  <p className="text-left sm:mt-1 text-sm sm:text-xl ml-8 sm:pb-4 sm:mb-1 w-[84%]">
+                    Prodoc provides consistent, multilingual communication 24/7
+                    via voice, WhatsApp, and bots, reducing confusion from
+                    multiple channels.
+                  </p>
+                )}
+              </div>
             </div>
+
             <div className="w-full">
-              <p className="text-base mb-2 mt-6 flex items-center gap-x-3 sm:text-lg">
-                <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base sm:text-lg">
+              <p
+                onClick={() => {
+                  resetFields();
+                  setThirdVisibility(!thirdVisibility);
+                }}
+                className="text-base mb-2 cursor-pointer font-semibold mt-0 flex items-center gap-x-3 sm:text-lg"
+              >
+                {thirdVisibility ? (
+                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
+                ) : (
+                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
+                )}
+                <span className="text-primary cursor-pointer text-base sm:text-xl">
                   Care Journey Gaps
                 </span>
               </p>
-              <p className="text-left sm:mt-1 text-sm">
-                Limited support outside hospitals affects patient engagement.
-                Prodoc offers ongoing, personalized interactions to enhance care
-                journeys and outcomes.
-              </p>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  thirdVisibility
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                {thirdVisibility && (
+                  <p className="text-left sm:mt-1 text-sm ml-8 sm:text-xl sm:pb-4 sm:mb-1 w-[84%]">
+                    Limited support outside hospitals affects patient
+                    engagement. Prodoc offers ongoing, personalized interactions
+                    to enhance care journeys and outcomes.
+                  </p>
+                )}
+              </div>
             </div>
+
             <div className="w-full">
-              <p className="text-base mb-2 mt-6 flex items-center gap-x-3 sm:text-lg">
-                <FaCircleCheck size={22} color="#1772d2" />
-                <span className="text-primary text-base sm:text-lg">
+              <p
+                onClick={() => {
+                  resetFields();
+                  setFourVisibility(!fourVisibility);
+                }}
+                className="text-base mb-2 mt-0 cursor-pointer flex items-center gap-x-3 sm:text-lg"
+              >
+                {fourVisibility ? (
+                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
+                ) : (
+                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
+                )}
+                <span className="text-primary font-semibold cursor-pointer text-base sm:text-xl">
                   Referral and Collaboration Bottlenecks
                 </span>
               </p>
-              <p className="text-left sm:mt-1 text-sm">
-                Coordinating patient referrals with partners is complex. Prodoc
-                simplifies this, boosting efficiency and satisfaction.
-              </p>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  fourVisibility
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                {fourVisibility && (
+                  <p className="text-left sm:mt-1 text-sm ml-8 sm:text-xl sm:pb-4 sm:mb-1 w-[84%]">
+                    Coordinating patient referrals with partners is complex.
+                    Prodoc simplifies this, boosting efficiency and
+                    satisfaction.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
+
           <div className="flex justify-center sm:justify-end items-center w-full sm:w-1/2">
             <Image
               alt="landing_section_1"

@@ -66,7 +66,7 @@ export default function PatientConnect() {
               Patient Experience
             </span>{" "}
             <br />
-            with Smart Solutions
+            with Care Connect
           </h1>
           <h3 className="text-lg mt-6 text-center sm:text-left">
             Transform your outpatient care with Prodoc AI's innovative platform{" "}
@@ -244,7 +244,8 @@ export default function PatientConnect() {
         <div className="mt-10 mb-10 w-[90vw] xl:w-[75vw] rounded-2xl">
           {/* Heading */}
           <h5 className="text-[28px] sm:text-[36px] lg:text-[40px] text-center">
-            Empowers you to <br className="sm:hidden"></br> deliver  exceptional <br className="sm:hidden" />
+            Empowers you to <br className="sm:hidden"></br> deliver exceptional{" "}
+            <br className="sm:hidden" />
             <span className="text-primary text-[28px] sm:text-[36px] lg:text-[40px]">
               {" "}
               outpatient care
@@ -323,7 +324,7 @@ export default function PatientConnect() {
           <div className="">
             <h3 className="text-[25px] sm:text-4xl text-black text-center">
               Empowers you to deliver exceptional outpatient care
-              <br  />
+              <br />
               <span className="text-[25px] sm:text-4xl font-normal sm:mt-2 block">
                 With{" "}
                 <span className="text-primary text-[25px] sm:text-4xl">

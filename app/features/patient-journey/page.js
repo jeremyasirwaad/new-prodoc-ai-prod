@@ -224,19 +224,19 @@ export default function PatientJourney() {
               Personalized Guidance
             </h3>
             <p className="text-base sm:text-lg flex items-center gap-x-3">
-              <FaCircleCheck className="text-xl"  color="#1772d2" />
+              <FaCircleCheck className="text-xl" color="#1772d2" />
               AI delivers customized instructions and resources.
             </p>
             <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck className="text-xl"  color="#1772d2" />
+              <FaCircleCheck className="text-xl" color="#1772d2" />
               Real-time updates on care plans.
             </p>
             <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck className="text-xl"  color="#1772d2" />
+              <FaCircleCheck className="text-xl" color="#1772d2" />
               Suggest services for accelerated recovery.
             </p>
             <p className="text-base sm:text-lg mt-6 flex items-center gap-x-3">
-              <FaCircleCheck className="text-xl"  color="#1772d2" />
+              <FaCircleCheck className="text-xl" color="#1772d2" />
               Direct communication with healthcare providers.
             </p>
           </div>
@@ -254,8 +254,9 @@ export default function PatientJourney() {
         <div className="mt-10 mb-10 sm:mt-20 sm:mb-20">
           <div className="">
             <h3 className="text-2xl text-black text-center">
-              Transform your patient <br className="sm:hidden" /> outreach  campaigns
-              <br  />
+              Transform your patient <br className="sm:hidden" /> outreach
+              campaigns
+              <br />
               <span className="text-2xl font-normal sm:mt-2 block">
                 With{" "}
                 <span className="text-primary text-2xl">

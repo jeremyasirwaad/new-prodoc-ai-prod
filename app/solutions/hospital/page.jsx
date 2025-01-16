@@ -88,7 +88,8 @@ export default function ForHospital() {
                 className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
               />
               <p className="text-lg text-center  mt-4">
-                Efficient Interdepartmental <br className="sm:hidden"></br> Communication
+                Efficient Interdepartmental <br className="sm:hidden"></br>{" "}
+                Communication
               </p>
             </div>
             <div className="sm:w-1/4 flex flex-col items-center justify-center">
