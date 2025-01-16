@@ -10,6 +10,10 @@ import solution_hospital_fact1 from "../../../assets/solutions/hospitals/solutio
 import solution_hospital_fact1_2 from "../../../assets/solutions/hospitals/solution_hospital_fact1_2.jpg";
 import solution_hospital_fact1_3 from "../../../assets/solutions/hospitals/solution_hospital_fact1_3.jpg";
 import solution_hospital_fact1_4 from "../../../assets/solutions/hospitals/solution_hospital_fact1_4.jpg";
+import patient_connect_fact1 from "../../../assets/features/patient-connect/patient_connect_fact_1.jpg";
+import patient_connect_fact2 from "../../../assets/features/patient-connect/patient_connect_fact_2.jpg";
+import patient_connect_fact3 from "../../../assets/features/patient-connect/patient_connect_fact_3.jpg";
+import patient_connect_fact4 from "../../../assets/features/patient-connect/patient_connect_fact_4.jpg";
 import landing_section_1 from "../../../assets/landing_section_1.png";
 
 import { IoIosArrowDropdownCircle } from "react-icons/io";
@@ -229,6 +233,80 @@ export default function PatientConnect() {
               Enhance your presence and accessibility by leveraging popular
               social platforms.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full flex items-center justify-center">
+        <div className="mt-10 mb-10 w-[90vw] xl:w-[75vw] rounded-2xl">
+          {/* Heading */}
+          <h5 className="text-[28px] sm:text-[36px] lg:text-[40px] text-center">
+            How<br className="sm:hidden"></br> <br className="sm:hidden" />
+            it works ?
+          </h5>
+
+          {/* First Row */}
+          <div className="w-full flex flex-col sm:flex-row gap-8 mt-10">
+            <div className="w-full sm:w-1/2 flex flex-col bg-white p-6 sm:p-10 rounded-xl relative shadow-md">
+              <Image
+                src={patient_connect_fact1}
+                alt="landing_testimonial"
+                className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
+              />
+              <span className="text-lg sm:text-xl mt-20 sm:mt-12 text-center sm:text-left">
+                Integrate
+              </span>
+              <p className="mt-5 text-sm sm:text-base text-center sm:text-left">
+                Connect your preferred communication channels seamlessly with
+                Prodoc AI.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 flex flex-col bg-white  p-6 sm:p-10 rounded-xl relative shadow-md">
+              <Image
+                src={patient_connect_fact3}
+                alt="landing_testimonial"
+                className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
+              />
+              <span className="text-lg sm:text-xl mt-20 sm:mt-12 text-center sm:text-left">
+                Engage
+              </span>
+              <p className="mt-5 text-sm sm:text-base text-center sm:text-left">
+                Use AI-powered tools to interact with patients in real time
+                across voice, web, WhatsApp, and more.
+              </p>
+            </div>
+          </div>
+
+          {/* Second Row */}
+          <div className="w-full flex flex-col sm:flex-row gap-8 mt-10">
+            <div className="w-full sm:w-1/2 flex flex-col bg-white  p-6 sm:p-10 rounded-xl relative shadow-md">
+              <Image
+                src={patient_connect_fact4}
+                alt="landing_testimonial"
+                className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
+              />
+              <span className="text-lg sm:text-xl mt-20 sm:mt-12 text-center sm:text-left">
+                Analyze
+              </span>
+              <p className="mt-5 text-sm sm:text-base text-center sm:text-left">
+                Simplify the intake process with digital forms, reducing
+                paperwork and expediting care initiation.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 flex flex-col bg-white  p-6 sm:p-10 rounded-xl relative shadow-md">
+              <Image
+                src={patient_connect_fact2}
+                alt="landing_testimonial"
+                className="rounded-full absolute left-50 sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
+              />
+              <span className="text-lg sm:text-xl mt-20 sm:mt-12 text-center sm:text-left">
+                Close Gaps in Care
+              </span>
+              <p className="mt-5 text-sm sm:text-base text-center sm:text-left">
+                Proactively identify and address potential issues, preventing
+                complications and improving overall health outcomes.
+              </p>
+            </div>
           </div>
         </div>
       </div>

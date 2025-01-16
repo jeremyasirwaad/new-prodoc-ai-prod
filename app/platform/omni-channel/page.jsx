@@ -213,6 +213,82 @@ export default function PatientConnect() {
           </div>
         </div>
       </div>
+
+      <div className="w-full flex  items-center justify-center bg-[#e9f4ff]">
+        <div className="w-[90vw] xl:w-[75vw]  mb-24 flex flex-col items-center justify-center ">
+          <div className="flex sm:flex-row flex-col gap-10 mt-14 sm:w-full justify-center items-center">
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
+              <Image
+                src={solution_hospital_fact1}
+                alt="landing_testimonial"
+                className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
+              />
+              <p className="text-sm text-center mt-4">
+                <span className="font-bold text-sm">
+                  Seamless Communication
+                </span>{" "}
+                <br></br>
+                <br className="sm:hidden"></br>
+                <span className="text-sm">
+                  Unifies all patient interactions across channels for
+                  consistent messaging and care
+                </span>
+              </p>
+            </div>
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
+              <Image
+                src={solution_hospital_fact1_2}
+                alt="landing_testimonial"
+                className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
+              />
+              <p className="text-sm text-center mt-4">
+                <span className="font-bold text-sm">AI-Powered Efficiency</span>{" "}
+                <br></br>
+                <br className="sm:hidden"></br>
+                <span className="text-sm">
+                  Leverages intelligent agents to handle queries and automate
+                  workflows, reducing staff workload.
+                </span>
+              </p>
+            </div>
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
+              <Image
+                src={solution_hospital_fact1_3}
+                alt="landing_testimonial"
+                className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
+              />
+              <p className="text-sm text-center mt-4">
+                <span className="font-bold text-sm">
+                  Personalized Engagement
+                </span>{" "}
+                <br></br>
+                <br className="sm:hidden"></br>
+                <span className="text-sm">
+                  Adapts to individual patient needs with context-aware
+                  conversations
+                </span>
+              </p>
+            </div>
+            <div className="sm:w-1/4 flex flex-col items-center justify-center">
+              <Image
+                src={solution_hospital_fact1_4}
+                alt="landing_testimonial"
+                className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
+              />
+              <p className="text-sm text-center mt-4">
+                <span className="font-bold text-sm">Data-Driven Insights</span>{" "}
+                <br></br>
+                <br className="sm:hidden"></br>
+                <span className="text-sm">
+                  Provides analytics to optimize patient communication and
+                  improve operational performance.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="w-full flex items-center justify-center">
         <div className="w-[90vw] xl:w-[75vw] mt-12 sm:mt-20 mb-16 sm:mb-24 flex flex-col-reverse sm:flex-row items-center sm:justify-between gap-12 sm:gap-0">
           <div className="flex flex-col items-center sm:items-start w-full sm:w-1/2 text-center sm:text-left">
