@@ -74,32 +74,6 @@ export default function LandingPage() {
     setFourVisibility(false);
   };
 
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  const handlePrev = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-        );
-        setIsTransitioning(false);
-      }, 300); // Match with the CSS transition duration
-    }
-  };
-
-  const handleNext = () => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) =>
-          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-        );
-        setIsTransitioning(false);
-      }, 300); // Match with the CSS transition duration
-    }
-  };
-
   const testimonials = [
     {
       id: 1,
@@ -130,6 +104,42 @@ export default function LandingPage() {
       text: "Prodoc AI helps us reach new and existing patients, follow up automatically, and engage with them in their own language.",
     },
   ];
+
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // Change this value to adjust the speed
+
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
+  const handlePrev = () => {
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+        );
+        setIsTransitioning(false);
+      }, 300); // Match with the CSS transition duration
+    }
+  };
+
+  const handleNext = () => {
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+        );
+        setIsTransitioning(false);
+      }, 300); // Match with the CSS transition duration
+    }
+  };
 
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
