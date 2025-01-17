@@ -47,7 +47,7 @@ export default function Insurance() {
               patient outreach
             </span>{" "}
           </h5>
-          
+
           <div className="w-full flex flex-col sm:flex-row gap-8 sm:gap-20 mt-10 sm:mt-10">
             {/* First Row */}
             <div className="w-full flex sm:flex-row flex-wrap gap-8">
@@ -155,7 +155,7 @@ export default function Insurance() {
         </div>
       </div> */}
       <div className="w-full flex items-center justify-center">
-        <div className="w-[90vw] xl:w-[75vw] sm:mt-20 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-start justify-between">
+        <div className="w-[90vw] xl:w-[75vw] sm:mt-20 sm:mb-24 flex flex-col lg:flex-row items-center lg:items-center justify-between">
           {/* Text Section */}
           <div className="flex flex-col justify-start w-full lg:w-1/2">
             <h3 className="text-[30px] sm:text-[35px] lg:text-[40px] mb-6 lg:mb-10 text-center lg:text-left">
@@ -182,11 +182,11 @@ export default function Insurance() {
           </div>
 
           {/* Image Section */}
-          <div className="hidden mt-10 lg:mt-0 justify-center items-center w-full lg:w-1/2">
+          <div className=" mt-10 lg:mt-0  flex justify-center lg:justify-end items-center w-full lg:w-1/2">
             <Image
               alt="solution_insurance_section"
               src={solution_insurance_section}
-              className="w-[300px] sm:w-[400px] lg:w-[450px] h-auto object-contain"
+              className="w-[300px] sm:w-[400px] lg:w-[450px] h-auto object-cover"
             />
           </div>
         </div>

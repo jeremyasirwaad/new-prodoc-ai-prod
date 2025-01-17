@@ -74,8 +74,8 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          {typeof window !== "undefined" && window.innerWidth > 1024 && (
-            <div className="gap-6 lg:gap-10 mx-auto hidden  lg:flex">
+          {typeof window !== "undefined" && window.innerWidth >= 1024 && (
+            <div className="gap-6 lg:gap-10 mx-auto hidden lg:ml-10  lg:flex">
               {/* Features Dropdown */}
               <Dropdown
                 overlayClassName="p-6"

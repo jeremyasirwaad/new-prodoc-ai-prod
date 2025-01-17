@@ -155,7 +155,7 @@ export default function LandingPage() {
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
       <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[75px] mt-40 sm:h-[200px]">
-        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]  sm:text-[35px] lg:text-[65px] ">
+        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]  sm:text-[40px] lg:text-[65px] ">
           Enhance{" "}
           <span className="text-primary text-[28px] sm:text-[35px] lg:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
             Healthcare
