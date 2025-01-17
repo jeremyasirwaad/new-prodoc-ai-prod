@@ -2,6 +2,8 @@
 
 import { Disclosure, Transition } from "@headlessui/react";
 import { FaChevronUp } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa";
+
 import Head from "next/head";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -45,7 +47,7 @@ function FAQ() {
           }}
           className="w-fit flex justify-center items-center gap-x-2 cursor-pointer text-sm p-2 rounded-md hover:bg-[#f7f7f5] "
         >
-          <IoIosArrowRoundBack size={25}/> 
+          <IoIosArrowRoundBack size={25} />
           Back
         </div>
       </div>
@@ -69,7 +71,7 @@ function FAQ() {
                   <div>
                     <Disclosure.Button className="flex justify-between items-center w-full px-4 py-3 my-2 text-left font-medium bg-[#f6f5f4] rounded-lg hover:bg-[#fafafa] focus:outline-none focus-visible:ring focus-visible:ring-gray-500/75 gap-x-10">
                       <span>{item.question}</span>
-                      <FaChevronUp
+                      <FaChevronDown
                         className={`${
                           open ? "transform rotate-180" : ""
                         } text-lg w-[30px]`}
@@ -100,4 +102,3 @@ function FAQ() {
 }
 
 export default FAQ;
-

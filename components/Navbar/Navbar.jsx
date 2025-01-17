@@ -35,7 +35,7 @@ export const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-      <div className=" z-50 bg-white  fixed w-full flex flex-col items-center ">
+      <div className={`z-50 bg-white fixed w-full flex flex-col items-center`}>
         {offermenu && (
           <div className="w-full bg-[#aed4ff] z-50 h-[60px]  flex-col  hidden  sm:flex justify-center items-center">
             <div className="h-[88px] w-full"></div>
@@ -59,7 +59,7 @@ export const Navbar = () => {
           </div>
         )}
         {/* Logo */}
-        <div className="flex items-center h-[88px]">
+        <div className="flex  items-center h-[88px]">
           <Link
             href="/"
             className="absolute left-10 cursor-pointer"
@@ -74,8 +74,8 @@ export const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          {typeof window !== "undefined" && window.innerWidth > 600 && (
-            <div className="gap-6 lg:gap-10 mx-auto hidden sm:flex">
+          {typeof window !== "undefined" && window.innerWidth > 1024 && (
+            <div className="gap-6 lg:gap-10 mx-auto hidden  lg:flex">
               {/* Features Dropdown */}
               <Dropdown
                 overlayClassName="p-6"
@@ -280,13 +280,13 @@ export const Navbar = () => {
           {/* Get in Touch Button */}
           <Link
             href="/book-a-demo"
-            className="hidden sm:block text-sm font-semibold absolute right-10"
+            className="hidden lg:block text-sm font-semibold absolute right-10"
           >
             <SimpleButton text={"Get in touch"} />
           </Link>
 
           {/* Mobile Menu */}
-          <div className="sm:hidden flex items-center absolute right-5">
+          <div className="lg:hidden flex items-center absolute  right-5">
             {isHamburgerClicked ? (
               <IoClose
                 className="m-3 text-3xl text-gray-800 cursor-pointer"
@@ -295,7 +295,7 @@ export const Navbar = () => {
               />
             ) : (
               <GiHamburgerMenu
-                className="m-3 text-3xl text-gray-800 cursor-pointer"
+                className="m-3 text-3xl  text-gray-800 cursor-pointer"
                 onClick={toggleMenu}
                 aria-label="Open Menu"
               />
@@ -303,8 +303,15 @@ export const Navbar = () => {
           </div>
           {/* Mobile Dropdown Menu */}
           {isHamburgerClicked && (
-            <div className="bg-white z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-32 overflow-y-auto fixed">
+            <div className="bg-white z-40 top-0 left-0 flex flex-col gap-6 items-center justify-start w-[100vw] h-screen pt-28 overflow-y-auto fixed">
               {/* Features */}
+              <div className="absolute top-2 right-2">
+                <IoClose
+                  className="m-3 text-3xl text-gray-800 cursor-pointer"
+                  onClick={closeDropdownMob}
+                  aria-label="Close Menu"
+                />
+              </div>
               <div className="w-[85vw] cursor-pointer">
                 <div
                   className="flex items-center justify-between"
@@ -498,6 +505,7 @@ export const Navbar = () => {
           )}
         </div>
       </div>
+      {offermenu && <div className="h-[60px]"></div>}
     </div>
   );
 };
