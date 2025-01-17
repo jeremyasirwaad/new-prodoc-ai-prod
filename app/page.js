@@ -106,16 +106,27 @@ export default function LandingPage() {
   ];
 
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 2000); // Change this value to adjust the speed
+    if (!isPaused) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 2000); // Change this value to adjust the speed
 
-    return () => clearInterval(interval);
-  }, [testimonials.length]);
+      return () => clearInterval(interval);
+    }
+  }, [testimonials.length, isPaused]);
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
 
   const handlePrev = () => {
     if (!isTransitioning) {
@@ -638,6 +649,8 @@ export default function LandingPage() {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     className="sm:min-w-[90%] min-w-full relative   shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl  sm:h-[300px]"
                   >
                     <Image
