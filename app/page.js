@@ -155,20 +155,20 @@ export default function LandingPage() {
   return (
     <section className="flex flex-col items-center overflow-hidden justify-center px-4 sm:px-0">
       <div className="text-[28px]  font-[400] text-center h-auto leading-[40px] sm:text-[50px] sm:leading-[75px] mt-40 sm:h-[200px]">
-        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px] sm:text-[65px] ">
+        <h1 className="font-[400] tracking-[0.5px] sm:tracking-[1px]  sm:text-[35px] lg:text-[65px] ">
           Enhance{" "}
-          <span className="text-primary text-[28px] sm:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
+          <span className="text-primary text-[28px] sm:text-[35px] lg:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
             Healthcare
           </span>{" "}
           outcomes with
           <br />
-          <span className="text-primary text-[28px] sm:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
+          <span className="text-primary text-[28px] sm:text-[35px] lg:text-[65px] font-[400] tracking-[0.5px] sm:tracking-[1px]">
             AI-powered
           </span>{" "}
           Patient Engagement
         </h1>
       </div>
-      <div className="mt-8 sm:mt-1">
+      <div className="mt-8 sm:mt-1 lg:mt-20 xl:mt-0">
         <Link
           href="/book-a-demo"
           className="bg-primary text-white px-5 py-4 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
@@ -651,12 +651,12 @@ export default function LandingPage() {
                     key={index}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    className="sm:min-w-[90%] min-w-full relative   shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl  sm:h-[300px]"
+                    className="sm:min-w-[100%] md:min-w-[90%] min-w-full relative   shadow-md flex flex-col  p-4 h-auto sm:p-10 rounded-xl h-auto"
                   >
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="rounded-full grayscale m-2 sm:absolute sm:right-20 sm:top-24 h-[80px] w-[80px] sm:right-15 sm:h-[150px] sm:w-[150px]"
+                      className="rounded-full grayscale m-2 sm:absolute sm:right-20 sm:top-16 md:top-16 h-[80px] w-[80px] sm:right-5 md:right-15 sm:h-[150px] sm:w-[150px]"
                     />
                     <span className="text-lg   sm:text-3xl sm:mt-12">
                       {testimonial.name}
