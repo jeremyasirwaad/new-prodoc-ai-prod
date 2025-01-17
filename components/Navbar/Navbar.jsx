@@ -143,11 +143,11 @@ export const Navbar = () => {
                       AI Care Engine
                     </Link>
                     <Link
-                      href="/platform/omni-channel"
+                      href="/platform/unified-care"
                       onClick={closeDropdownDesktop}
                       className="cursor-pointer p-3 rounded-lg hover:bg-blue-50"
                     >
-                      Omnichannel CareHub
+                      Unified CareConnect
                     </Link>
                     <Link
                       href="/platform/multi-channel"

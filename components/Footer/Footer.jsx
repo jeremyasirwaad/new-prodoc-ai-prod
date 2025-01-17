@@ -46,12 +46,10 @@ export const Footer = () => {
               <Link href={"/solutions/insurance"} className="mt-2">
                 For Insurance
               </Link>
-            </div>
-
-            {/* LLMs Section */}
-            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
-              <h3 className="text-lg font-semibold text-[#072646]">LLMs</h3>
-              <Link href={"/llms/open-source"} className="mt-4">
+              <h3 className="text-lg mt-2 font-semibold text-[#072646]">
+                LLMs
+              </h3>
+              <Link href={"/llms/open-source"} className="">
                 Open Sourced LLMs
               </Link>
             </div>
@@ -69,6 +67,22 @@ export const Footer = () => {
               </Link>
               <Link href={"/partner"} className="mt-2">
                 Become a Partner
+              </Link>
+            </div>
+
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">Company</h3>
+              <Link href={"/blogs"} className="mt-4">
+                About
+              </Link>
+              <Link href={"/faq"} className="mt-2">
+                Careers
+              </Link>
+              <Link href={"/partner"} className="mt-2">
+                News
+              </Link>
+              <Link href={"/partner"} className="mt-2">
+                Contact Us
               </Link>
             </div>
           </div>
