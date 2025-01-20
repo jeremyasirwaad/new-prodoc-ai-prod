@@ -46,51 +46,51 @@ export default function about() {
       <div className="w-full h-full">
         <div className="sm:p-16 p-4">
           <p className="text-black flex-wrap  text-start flex justify-start items-start sm:text-[18px]  z-10">
-            Imagine a healthcare ecosystem where patients find the right care
-            confidently, providers deliver it efficiently, and all stakeholders
-            gain valuable insights. AI is redefining healthcare, and we're
-            leading the charge. Through smarter data and empowered decisions, we
-            unlock a future of better health for all.
+            Imagine a world where patients easily find the right care, doctors
+            and hospitals deliver it smoothly, and insurers get the insights
+            they need to improve outcomes. At Prodoc AI, we are making this a
+            reality. Using AI, smarter data, and better decisions, we are
+            building a future where healthcare works better for everyone.
           </p>
           <p className="text-black pb-4 text-[30px] font-semibold text-blue-500 mt-4">
             Our Story
           </p>
           <p className="text-black flex-wrap pb-8  text-start flex justify-start items-start sm:text-[18px]  z-10">
-            Rooted in a personal battle against cancer, Prodoc was born in 2021
-            with a vision to redefine the landscape of healthcare. Inspired by
-            the challenges faced by a loved one in navigating the intricate
-            healthcare maze, one of our founders envisioned a solution fueled by
-            data, transparency, and patient-centricity.
+            Prodoc AI started in 2021, inspired by a personal journey through
+            the challenges of healthcare. One of our founders faced the
+            struggles of helping a loved one with cancer—understanding medical
+            options, finding the right care, and making informed decisions. This
+            experience led to a vision: to make healthcare simple, clear, and
+            focused on patients.
           </p>
           <p className="text-black flex-wrap pb-8  text-start flex justify-start items-start sm:text-[18px]  z-10">
-            Driven by this vision, we've tirelessly crafted a suite of
-            AI-powered tools that simplify medical terminology, offer
-            data-driven care alternatives, and seamlessly connect patients with
-            appropriate providers. Through strategic alliances with insurers and
-            TPAs, we harness the wealth of insights from existing data, forging
-            a cohesive ecosystem that optimizes care delivery and fosters
-            improved health outcomes for all.
+            We've created AI-powered tools to break down complex medical
+            information, offer smart care recommendations, and connect patients
+            with the right providers. By working closely with insurers and
+            healthcare organizations, we turn data into useful insights, helping
+            improve care and outcomes for all.
           </p>
           <p className="text-black  text-start flex justify-start items-start sm:text-[18px]  z-10">
-            Prodoc represents more than mere technology; it embodies a
-            commitment to revolutionize healthcare, making it a journey of
-            informed choices, confident decisions, and ultimately, a healthier
-            future.
+            Prodoc AI is more than just technology—it's a commitment to make
+            healthcare easy, accessible, and empowering. Together, we're
+            creating a future where everyone can make informed choices, feel
+            confident in their care, and live healthier lives.
           </p>
           <div className="w-full flex flex-col sm:flex-row items-center justify-center mt-10 gap-4">
             <div className="h-auto sm:p-6 sm:w-1/2 bg-[#f6f5f4] flex flex-col justify-center items-start">
               <p className="text-[25px] font-semibold p-4 pb-1">Vision</p>
               <p className="p-4 pt-2">
-                Seamless care for patients, optimized services for providers,
-                and data-driven insights for payers. Together, we build a
-                healthier future for all.
+                To create a future where AI empowers patients with better
+                communication, improved care journeys, and meaningful healthcare
+                experiences.
               </p>
             </div>
             <div className="h-auto p-6 sm:w-1/2 bg-[#f6f5f4] flex flex-col justify-center items-start">
               <p className="text-[25px] font-semibold p-4 pb-1">Mission</p>
               <p className="p-4 pt-2">
-                Imagine a world where your health journey is clear, informed,
-                and empowering. At Prodoc, we make that world a reality.
+                To transform patient engagement with AI-driven solutions,
+                ensuring personalized, seamless, and accessible care for
+                everyone.
               </p>
             </div>
           </div>

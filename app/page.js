@@ -41,9 +41,9 @@ const secondMarqueePluginLogos = plugin_logos.slice(6);
 export default function LandingPage() {
   const [form] = Form.useForm();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [firstVisibility, setFirstVisibility] = useState(true);
+  const [firstVisibility, setFirstVisibility] = useState(false);
   const [secondVisibility, setSecondVisibility] = useState(false);
-  const [thirdVisibility, setThirdVisibility] = useState(false);
+  const [thirdVisibility, setThirdVisibility] = useState(true);
   const [fourVisibility, setFourVisibility] = useState(false);
 
   const [transformValue, setTransformValue] = useState(currentIndex * 85);
@@ -209,6 +209,40 @@ export default function LandingPage() {
               <p
                 onClick={() => {
                   resetFields();
+                  setThirdVisibility(!thirdVisibility);
+                }}
+                className="text-base mb-2 cursor-pointer font-semibold mt-0 flex items-center gap-x-3 sm:text-lg"
+              >
+                {thirdVisibility ? (
+                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
+                ) : (
+                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
+                )}
+                <span className="text-primary cursor-pointer text-base sm:text-xl">
+                  Care Journey Gaps
+                </span>
+              </p>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  thirdVisibility
+                    ? "max-h-[500px] opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                {thirdVisibility && (
+                  <p className="text-left sm:mt-1 text-sm ml-8 sm:text-xl sm:pb-4 sm:mb-1 w-[84%]">
+                    Limited support outside hospitals affects patient
+                    engagement. Prodoc offers ongoing, personalized interactions
+                    to enhance care journeys and outcomes.
+                  </p>
+                )}
+              </div>
+            </div>
+
+            <div className="w-full">
+              <p
+                onClick={() => {
+                  resetFields();
                   setFirstVisibility(!firstVisibility);
                 }}
                 className="text-base font-semibold mb-2 cursor-pointer gap-x-3 flex items-center sm:text-xl"
@@ -270,40 +304,6 @@ export default function LandingPage() {
                     Prodoc provides consistent, multilingual communication 24/7
                     via voice, WhatsApp, and bots, reducing confusion from
                     multiple channels.
-                  </p>
-                )}
-              </div>
-            </div>
-
-            <div className="w-full">
-              <p
-                onClick={() => {
-                  resetFields();
-                  setThirdVisibility(!thirdVisibility);
-                }}
-                className="text-base mb-2 cursor-pointer font-semibold mt-0 flex items-center gap-x-3 sm:text-lg"
-              >
-                {thirdVisibility ? (
-                  <IoIosArrowDropdownCircle size={23} color="#1772d2" />
-                ) : (
-                  <IoIosArrowDroprightCircle size={23} color="#1772d2" />
-                )}
-                <span className="text-primary cursor-pointer text-base sm:text-xl">
-                  Care Journey Gaps
-                </span>
-              </p>
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  thirdVisibility
-                    ? "max-h-[500px] opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                {thirdVisibility && (
-                  <p className="text-left sm:mt-1 text-sm ml-8 sm:text-xl sm:pb-4 sm:mb-1 w-[84%]">
-                    Limited support outside hospitals affects patient
-                    engagement. Prodoc offers ongoing, personalized interactions
-                    to enhance care journeys and outcomes.
                   </p>
                 )}
               </div>
