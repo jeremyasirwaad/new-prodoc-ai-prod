@@ -14,7 +14,13 @@ import solution_hospital_fact1 from "../../../assets/solutions/hospitals/solutio
 import solution_hospital_fact1_2 from "../../../assets/solutions/hospitals/solution_hospital_fact1_2.jpg";
 import solution_hospital_fact1_3 from "../../../assets/solutions/hospitals/solution_hospital_fact1_3.jpg";
 import solution_hospital_fact1_4 from "../../../assets/solutions/hospitals/solution_hospital_fact1_4.jpg";
+import health_care_pg4 from "../../../assets/platform/health_care_pg4.jpg";
 import landing_section_1 from "../../../assets/landing_section_1.png";
+import health_care_pg5 from "../../../assets/platform/health_care_pg5.jpg";
+
+import second_one from "../../../assets/platform/second_one.jpg";
+import second_two from "../../../assets/platform/second_two.jpg";
+import second_three from "../../../assets/platform/second_three.jpg";
 
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -36,7 +42,7 @@ export default function PatientConnect() {
   };
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 sm:mt-32 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-x-10">
+      <div className="sm:text-[50px] text-center  sm:leading-[68px] mt-32 sm:mt-32 mb-20  w-[90vw] xl:w-[75vw] flex flex-col sm:flex-row sm:items-center gap-16 sm:gap-x-16">
         <div className="text-[40] flex flex-col sm:w-[50%]">
           <p className="font-[400] text-center text-[30px] sm:text-[50px]  sm:text-left ">
             Seamless, AI-Powered Engagement Across Every Patient Touchpoint{" "}
@@ -53,8 +59,8 @@ export default function PatientConnect() {
             Schedule a Demo
           </button>
         </div>
-        <div className="mt-8 sm:w-[50%] ">
-          <Image src={patient_connect_hero} alt="alt" />
+        <div className="mt-0 sm:w-[50%] ">
+          <Image src={health_care_pg4} alt="alt" />
         </div>
       </div>
       <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:mt-12 sm:h-[204px] p-2">
@@ -79,7 +85,7 @@ export default function PatientConnect() {
         <div className="w-full flex sm:flex-row flex-col gap-8 mt-14">
           <div className="sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
             <Image
-              src={patient_outreach_fact1}
+              src={second_one}
               alt="landing_testimonial"
               className="rounded-full absolute sm:right-10 top-5 h-[100px] w-[100px]"
             />
@@ -143,7 +149,7 @@ export default function PatientConnect() {
         <div className="w-full flex flex-col sm:flex-row gap-8 mt-10">
           <div className="sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
             <Image
-              src={patient_outreach_fact3}
+              src={second_two}
               alt="landing_testimonial"
               className="rounded-full absolute sm:right-10 top-5 h-[100px] w-[100px]"
             />
@@ -176,7 +182,7 @@ export default function PatientConnect() {
           </div>
           <div className="sm:w-1/2 flex flex-col bg-white p-10 rounded-xl relative shadow-md">
             <Image
-              src={patient_outreach_fact4}
+              src={second_three}
               alt="landing_testimonial"
               className="rounded-full absolute sm:right-10 top-5 h-[100px] w-[100px]"
             />
@@ -232,7 +238,7 @@ export default function PatientConnect() {
             </div>
             <div className="sm:w-1/4 flex flex-col items-center justify-center">
               <Image
-                src={solution_hospital_fact1_2}
+                src={second_one}
                 alt="landing_testimonial"
                 className="rounded-full right-10 top-5 h-[80px] sm:h-[100px] w-[80px] sm:w-[100px]"
               />
@@ -431,7 +437,7 @@ export default function PatientConnect() {
           <div className="flex justify-center sm:justify-end items-center w-full sm:w-1/2">
             <Image
               alt="landing_section_1"
-              src={landing_section_1}
+              src={health_care_pg5}
               className="mx-auto sm:ml-auto w-[300px] sm:w-[400px] h-auto object-contain"
             />
           </div>

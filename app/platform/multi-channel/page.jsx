@@ -14,6 +14,7 @@ import patient_connect_fact1 from "../../../assets/features/patient-connect/pati
 import patient_connect_fact2 from "../../../assets/features/patient-connect/patient_connect_fact_2.jpg";
 import patient_connect_fact3 from "../../../assets/features/patient-connect/patient_connect_fact_3.jpg";
 import patient_connect_fact4 from "../../../assets/features/patient-connect/patient_connect_fact_4.jpg";
+import health_care_pg3 from "../../../assets/platform/health_care_pg3.png";
 import landing_section_1 from "../../../assets/landing_section_1.png";
 
 import { IoIosArrowDropdownCircle } from "react-icons/io";
@@ -548,7 +549,7 @@ export default function PatientConnect() {
           <div className="flex justify-center sm:justify-end items-center w-full sm:w-1/2">
             <Image
               alt="landing_section_1"
-              src={landing_section_1}
+              src={health_care_pg3}
               className="mx-auto sm:ml-auto w-[300px] sm:w-[400px] h-auto object-contain"
             />
           </div>

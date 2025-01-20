@@ -8,6 +8,12 @@ import patient_journey_fact2 from "../../../assets/features/patient-journey/pati
 import patient_connect_hero from "../../../assets/features/patient-connect/patient_connect_hero.png";
 import patient_journey_fact3 from "../../../assets/features/patient-journey/patient_journey_fact_3.jpg";
 import patient_journey_fact4 from "../../../assets/features/patient-journey/patient_journey_fact_4.jpg";
+import health_care from "../../../assets/platform/health_care.png";
+import health_care_2 from "../../../assets/platform/health_care_2.jpg";
+import health_care_pg6 from "../../../assets/platform/health_care_pg6.jpg";
+import health_care_pg7 from "../../../assets/platform/health_care_pg7.jpg";
+import health_care_pg8 from "../../../assets/platform/health_care_pg8.jpg";
+
 import Link from "next/link";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
@@ -46,8 +52,8 @@ export default function PatientConnect() {
             Schedule a Demo
           </button>
         </div>
-        <div className="mt-8 sm:w-[50%] ">
-          <Image src={patient_connect_hero} alt="alt" />
+        <div className="mt-8 p-8 sm:w-[50%] ">
+          <Image src={health_care} alt="alt" />
         </div>
       </div>
       <div className="text-[30px] sm:text-[50px] text-center sm:leading-[68px] mt-32 sm:mt-12 sm:h-[204px] p-2">
@@ -74,7 +80,7 @@ export default function PatientConnect() {
           <div className="w-full flex flex-col sm:flex-row gap-8 mt-6 sm:mt-14">
             <div className="w-full sm:w-1/2 flex flex-col  p-6 rounded-xl relative shadow-md">
               <Image
-                src={patient_journey_fact1}
+                src={health_care_pg6}
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
               />
@@ -115,7 +121,7 @@ export default function PatientConnect() {
             </div>
             <div className="w-full sm:w-1/2 flex flex-col  p-6 rounded-xl relative shadow-md">
               <Image
-                src={patient_journey_fact2}
+                src={health_care_pg7}
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
               />
@@ -195,7 +201,7 @@ export default function PatientConnect() {
 
             <div className="w-full sm:w-1/2 flex flex-col  p-10 rounded-xl relative shadow-md">
               <Image
-                src={patient_journey_fact4}
+                src={health_care_pg8}
                 alt="landing_testimonial"
                 className="rounded-full absolute sm:right-10 top-5 h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
               />
@@ -347,7 +353,7 @@ export default function PatientConnect() {
           <div className="flex justify-center sm:justify-end items-center w-full sm:w-1/2">
             <Image
               alt="landing_section_1"
-              src={landing_section_1}
+              src={health_care_2}
               className="mx-auto sm:ml-auto w-[300px] sm:w-[400px] h-auto object-contain"
             />
           </div>
