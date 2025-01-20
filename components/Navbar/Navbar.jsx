@@ -37,7 +37,7 @@ export const Navbar = () => {
       {/* Navbar Container */}
       <div className={`z-50 bg-white fixed w-full flex flex-col items-center`}>
         {offermenu && (
-          <div className="w-full bg-[#aed4ff] z-50 h-[60px]  flex-col  hidden  sm:flex justify-center items-center">
+          <div className="w-full bg-[#e9f4ff] z-50 h-[60px]  flex-col  hidden  sm:flex justify-center items-center">
             <div className="h-[88px] w-full"></div>
             <div className="py-4 relative w-full flex items-center justify-center">
               <span className="text-sm">
@@ -388,13 +388,13 @@ export const Navbar = () => {
                     >
                       Omnichannel CareHub
                     </Link>
-                    <Link
+                    {/* <Link
                       href="/platform/multi-channel"
                       onClick={closeDropdownMob}
                       className="cursor-pointer"
                     >
                       Multichannel CareConnect
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </div>

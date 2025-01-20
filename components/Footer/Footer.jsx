@@ -12,9 +12,9 @@ export const Footer = () => {
       <div className="w-full flex items-center flex-col justify-center">
         <div className="bg-blue-100 w-full flex flex-col items-center justify-center">
           {/* Divider Section */}
-          <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
+          {/* <div className="w-[90vw] flex items-start justify-between xl:w-[65vw]">
             <Divider />
-          </div>
+          </div> */}
 
           {/* Content Section */}
           <div className="w-[90vw] mt-6 sm:mt-16 sm:mb-10 flex flex-wrap gap-8 sm:gap-4 lg:gap-8 sm:flex-nowrap items-start justify-center sm:justify-between xl:w-[65vw]">
@@ -32,6 +32,17 @@ export const Footer = () => {
               </Link>
               <Link href={"/features/patient-outreach"} className="mt-2">
                 Patient Outreach
+              </Link>
+            </div>
+
+            {/* Platform Section */}
+            <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
+              <h3 className="text-lg font-semibold text-[#072646]">Platform</h3>
+              <Link href={"/platform/care-engine"} className="mt-4">
+                AI Care Engine
+              </Link>
+              <Link href={"/platform/unified-care"} className="mt-2">
+                Unified CareConnect
               </Link>
             </div>
 
@@ -68,6 +79,9 @@ export const Footer = () => {
               <Link href={"/partner"} className="mt-2">
                 Become a Partner
               </Link>
+              <Link href="https://cep.prodoc.ai/docs_api" className="mt-2">
+                API Docs
+              </Link>
             </div>
 
             <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
@@ -78,7 +92,7 @@ export const Footer = () => {
               <Link href={"/faq"} className="mt-2">
                 Careers
               </Link>
-              <Link href={"/partner"} className="mt-2">
+              <Link href={"/news"} className="mt-2">
                 News
               </Link>
               <Link href={"/contact"} className="mt-2">

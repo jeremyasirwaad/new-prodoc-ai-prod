@@ -27,6 +27,7 @@ import landing_section_2_patientoutreach from "../assets/landing_section_2_patie
 import landing_section_3 from "../assets/landing_section_3.jpg";
 import landing_hero_3 from "../assets/Landing_hero_3.png";
 import landing_page from "../assets/landing_page.jpg";
+import landing_hero from "../assets/landing_hero.jpg";
 
 import { plugin_logos } from "@/assets/logos";
 
@@ -177,7 +178,7 @@ export default function LandingPage() {
         </Link>
       </div>
       <div className="w-[90vw] xl:w-[75vw] flex justify-center items-center rounded-2xl mt-16 sm:mt-26 mb-12 sm:mb-16">
-        <Image alt="landing_hero" className="rounded-3xl" src={landing_page} />
+        <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
       </div>
       <div className="bg-[#e9f4ff] w-[100vw] py-16 flex flex-col items-center justify-center">
         <Marquee>
@@ -195,7 +196,7 @@ export default function LandingPage() {
           })}
         </Marquee>
         <p className="mx-4 text-center text-lg mt-6 font-semibold">
-          Trusted by hundreds of hospitals and clinics since 2022
+          Trusted by hundreds of healthcare providers since 2022
         </p>
       </div>
       <div className="w-full flex items-center justify-center">
@@ -370,7 +371,7 @@ export default function LandingPage() {
               href={"/book-a-demo"}
               className="bg-primary text-white px-5 py-4 sm:px-6 sm:py-4 rounded-3xl text-sm sm:text-base"
             >
-              Get in touch
+              Book a demo
             </Link>
           </div>
         </div>
@@ -430,19 +431,19 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-[#e9f4ff]   justify-center gap-20 h-[200px]  items-center w-full sm:flex-row ">
+      <div className="flex flex-wrap bg-[#e9f4ff] sm:p-10    justify-center sm:gap-32 gap-24 h-auto  items-center w-full ">
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">1M+</p>
+          <p className="text-[40px] sm:text-[65px] ">1M+</p>
           <p className="text-lg sm:text-xl">Patients Engaged</p>
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10 sm:mt-6">10K+</p>
+          <p className="text-[40px] sm:text-[65px]">10K+</p>
           <p className="text-lg sm:text-xl">Daily Interactions</p>
         </div>
 
         <div className="  text-center">
-          <p className="text-[40px] sm:text-[65px] mt-10  sm:mt-6">100+</p>
+          <p className="text-[40px] sm:text-[65px] ">100+</p>
           <p className="text-lg sm:text-xl">Healthcare Providers</p>
         </div>
         {/* </div> */}
@@ -738,10 +739,10 @@ export default function LandingPage() {
         <div className="mt-20 mb-20">
           <div className="">
             <h3 className="text-[30px] sm:text-[50px] text-black text-center">
-              Empowering 100+ healthcare facilities worldwide
+              Empowering healthcare facilities worldwide
               <br />
               <span className="text-[30px] sm:text-[50px] font-normal hidden sm:block">
-                With{" "}
+                with{" "}
                 <span className="text-primary text-[30px] sm:text-[50px]">
                   24/7 multilingual <br className="sm:hidden"></br>{" "}
                 </span>{" "}

@@ -1,9 +1,9 @@
 import axios from "axios";
 
-export const fetchBlogs = async (page = 1, pageSize = 10) => {
+export const fetchNews = async (page = 1, pageSize = 10) => {
   try {
     const response = await axios.get(
-      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/blogs`,
+      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/company-newss`,
       {
         params: {
           populate: "image",
@@ -13,7 +13,7 @@ export const fetchBlogs = async (page = 1, pageSize = 10) => {
           },
         },
         headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_STRAPI_API_TOKEN}`,
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_ACCESS_TOKEN}`,
         },
       }
     );
