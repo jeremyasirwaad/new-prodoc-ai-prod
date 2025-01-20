@@ -1,4 +1,6 @@
 "use client";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 import { Button, Form, Input } from "antd";
 
@@ -8,8 +10,8 @@ export default function PatientConnect() {
   return (
     <section className="flex flex-col w-full">
       <div className=" mt-32 sm:mt-32 w-full flex wrap  h-screen flex items-center justify-center">
-        <div className="w-1/2 h-full flex flex-col justify-start items-end sm:pt-20">
-          <p className="text-primary text-[30px] sm:text-[50px] sm:w-[70%]  sm:text-left w-full">
+        <div className="w-[40%] h-full flex    flex-col  items-end sm:pt-20">
+          <p className="text-primary text-[30px]   sm:text-[50px] sm:w-[70%]  sm:text-left w-full">
             Contact Us
           </p>
           <p className="text-sm sm:text-lg mt-4 sm:w-[70%]">
@@ -23,9 +25,30 @@ export default function PatientConnect() {
             the form. We'd be happy to answer your questions and help enhance
             your healthcare experience!
           </p>
+          <div className="mt-6 flex items-center justify-start flex-wrap">
+            <div className="h-auto w-auto mr-8 flex items-center p-4 bg-[#f6f5f4]">
+              <span className="mr-1">
+                <FaPhone />
+              </span>
+              +91 890 409 3888
+            </div>
+            <div className="h-auto w-auto flex items-center p-4 bg-[#f6f5f4]">
+              <span className="mr-1">
+                <MdEmail />
+              </span>
+              <a
+                href="http://"
+                className="text-blue-500 hover:text-blue-400"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                contact@prodoc.io
+              </a>
+            </div>
+          </div>
         </div>
         <div className="w-1/2 h-full flex flex-col items-center justify-start">
-          <div className="flex bg-[#f6f5f4] h-[550px] w-[480px] p-12 pt-6 flex-col">
+          <div className="flex bg-[#f6f5f4] h-[600px] w-[80%] flex-col justify-center items-center p-12 pt-16 flex-col">
             <Form
               layout="vertical"
               className="w-[80vw] sm:w-full sm:max-w-md "
@@ -82,10 +105,10 @@ export default function PatientConnect() {
               >
                 <Input.TextArea size="large" placeholder="Enter your message" />
               </Form.Item>
+              <div className="text-center pb-4">
+                <Button type="primary">Submit</Button>
+              </div>
             </Form>
-          </div>
-          <div className="w-fit mt-3 w-full text-center">
-            <Button type="primary">Submit</Button>
           </div>
         </div>
       </div>

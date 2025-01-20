@@ -72,7 +72,7 @@ export const Footer = () => {
 
             <div className="flex flex-col items-center sm:items-start justify-center w-full sm:w-auto">
               <h3 className="text-lg font-semibold text-[#072646]">Company</h3>
-              <Link href={"/blogs"} className="mt-4">
+              <Link href={"/about"} className="mt-4">
                 About
               </Link>
               <Link href={"/faq"} className="mt-2">
