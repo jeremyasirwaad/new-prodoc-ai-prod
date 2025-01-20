@@ -81,7 +81,7 @@ export const Footer = () => {
               <Link href={"/partner"} className="mt-2">
                 News
               </Link>
-              <Link href={"/partner"} className="mt-2">
+              <Link href={"/contact"} className="mt-2">
                 Contact Us
               </Link>
             </div>
