@@ -1,6 +1,5 @@
 "use client";
 
-import landing_hero from "../assets/landing_hero.jpg";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
@@ -27,6 +26,7 @@ import patient_connect_hero from "../assets/features/patient-connect/patient_con
 import landing_section_2_patientoutreach from "../assets/landing_section_2_patientoutreach.png";
 import landing_section_3 from "../assets/landing_section_3.jpg";
 import landing_hero_3 from "../assets/Landing_hero_3.png";
+import landing_page from "../assets/landing_page.jpg";
 
 import { plugin_logos } from "@/assets/logos";
 
@@ -176,8 +176,8 @@ export default function LandingPage() {
           Schedule a meeting
         </Link>
       </div>
-      <div className="w-[90vw] xl:w-[75vw] rounded-2xl mt-16 sm:mt-26 mb-12 sm:mb-16">
-        <Image alt="landing_hero" className="rounded-3xl" src={landing_hero} />
+      <div className="w-[90vw] xl:w-[75vw] flex justify-center items-center rounded-2xl mt-16 sm:mt-26 mb-12 sm:mb-16">
+        <Image alt="landing_hero" className="rounded-3xl" src={landing_page} />
       </div>
       <div className="bg-[#e9f4ff] w-[100vw] py-16 flex flex-col items-center justify-center">
         <Marquee>
